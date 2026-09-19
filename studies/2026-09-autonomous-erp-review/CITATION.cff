@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Cite this computational study with its stated synthetic-data scope."
+title: "Faster AI Is Not the Same as Better Delegation"
+authors:
+  - family-names: "Kars"
+    given-names: "Osman Kaan"
+date-released: "2026-09-19"
+type: software
+abstract: "A reproducible scripted-policy inventory simulation and technical article. No human participants or new model-inference calls."

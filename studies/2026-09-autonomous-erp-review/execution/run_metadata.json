@@ -1,0 +1,34 @@
+{
+  "config": {
+    "holding": 0.4,
+    "initial_cash": 20000.0,
+    "lead": [
+      1,
+      4
+    ],
+    "order_cap": 400,
+    "position_cap": 1200,
+    "price": 35.0,
+    "reserve": 2000.0,
+    "review_budget": 4,
+    "review_gap": 6,
+    "salvage_fraction": 0.5,
+    "target_duration": 4,
+    "unit_cost": 20.0
+  },
+  "date": "2026-09-19",
+  "demand_paths": 480,
+  "human_participants": 0,
+  "input_sha256": "823b7851e4823c8591e28b85ed382cf04383c4ad1113527eedcbb80801898891",
+  "new_llm_calls": 0,
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "primary_period_records": 748800,
+  "primary_trajectories": 12480,
+  "python": "3.13.5",
+  "scenario_settings": 960,
+  "seed_clusters": 120,
+  "study": "scripted-profile intervention simulation",
+  "total_trajectories": 35520,
+  "wall_seconds": 16.759
+}
