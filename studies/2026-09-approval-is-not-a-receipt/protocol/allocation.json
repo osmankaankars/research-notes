@@ -1,0 +1,722 @@
+[
+  {
+    "case_id": "eval-F01-00",
+    "family": "F01",
+    "capability": "DURABLE",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F01-01",
+    "family": "F01",
+    "capability": "EXPIRING",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F01-02",
+    "family": "F01",
+    "capability": "OPAQUE",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F01-03",
+    "family": "F01",
+    "capability": "DURABLE",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F01-04",
+    "family": "F01",
+    "capability": "EXPIRING",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F01-05",
+    "family": "F01",
+    "capability": "OPAQUE",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F01-06",
+    "family": "F01",
+    "capability": "DURABLE",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F01-07",
+    "family": "F01",
+    "capability": "EXPIRING",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F01-08",
+    "family": "F01",
+    "capability": "OPAQUE",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F01-09",
+    "family": "F01",
+    "capability": "DURABLE",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F02-00",
+    "family": "F02",
+    "capability": "DURABLE",
+    "schedule_hash": "619564add3a7143c7e1b3a1dd91e525c7c3637b0a1c2aa093075e32d4cfbf316"
+  },
+  {
+    "case_id": "eval-F02-01",
+    "family": "F02",
+    "capability": "EXPIRING",
+    "schedule_hash": "02a597f9aa083d7b96aefa19a7c878157dd7701774b9bbabbc28f5c75ca3343f"
+  },
+  {
+    "case_id": "eval-F02-02",
+    "family": "F02",
+    "capability": "OPAQUE",
+    "schedule_hash": "c3e11c152f62ceb9ed78e9242a06aae14f01236cbf2be62b250736502060eec4"
+  },
+  {
+    "case_id": "eval-F02-03",
+    "family": "F02",
+    "capability": "DURABLE",
+    "schedule_hash": "f291f9adc1533462c4ec9f91bdf10358cc85c4426ddc2fd0111d97d5cc128ccd"
+  },
+  {
+    "case_id": "eval-F02-04",
+    "family": "F02",
+    "capability": "EXPIRING",
+    "schedule_hash": "9eb8cd158ccc18b7bb72e3239cb660631cbaa778bc4fd20a545dc5cf5084ae3e"
+  },
+  {
+    "case_id": "eval-F02-05",
+    "family": "F02",
+    "capability": "OPAQUE",
+    "schedule_hash": "c95359e9830b07d1d21b734cb24e7f96f44cff112c40dec058a7681cb02877e0"
+  },
+  {
+    "case_id": "eval-F02-06",
+    "family": "F02",
+    "capability": "DURABLE",
+    "schedule_hash": "bf43be0192d3a4e2660b4b565fceb1c72f261286cbebc43b08717f2684a3598a"
+  },
+  {
+    "case_id": "eval-F02-07",
+    "family": "F02",
+    "capability": "EXPIRING",
+    "schedule_hash": "ebb792f9f49333865db541c4094d10b95113814a1940a5f135c273f98cdfd364"
+  },
+  {
+    "case_id": "eval-F02-08",
+    "family": "F02",
+    "capability": "OPAQUE",
+    "schedule_hash": "e9fb7b7bd7b4f2db611085123882ac5aea4e666994514ff75b19acee696695ae"
+  },
+  {
+    "case_id": "eval-F02-09",
+    "family": "F02",
+    "capability": "DURABLE",
+    "schedule_hash": "ef070a8d54109152947e96cd74e33cf165cee81a3da71d5006ccadedac9cd4fe"
+  },
+  {
+    "case_id": "eval-F03-00",
+    "family": "F03",
+    "capability": "DURABLE",
+    "schedule_hash": "c2dca2ab738274f92ed37b60f7ed0f63d8b0fd0c5c10150d6af46606ac1b4027"
+  },
+  {
+    "case_id": "eval-F03-01",
+    "family": "F03",
+    "capability": "EXPIRING",
+    "schedule_hash": "b28f401694578a4b5f0067572234e02cc281fd231025b100ac3358ef8834322d"
+  },
+  {
+    "case_id": "eval-F03-02",
+    "family": "F03",
+    "capability": "OPAQUE",
+    "schedule_hash": "153063292f4419833f9c369ad9bc3c90070116565abfb4f84c435785a4d6df96"
+  },
+  {
+    "case_id": "eval-F03-03",
+    "family": "F03",
+    "capability": "DURABLE",
+    "schedule_hash": "65b7a22d8a5d392ee62e62013487ced436e59a92bff5edeab12f0acef856ac82"
+  },
+  {
+    "case_id": "eval-F03-04",
+    "family": "F03",
+    "capability": "EXPIRING",
+    "schedule_hash": "490e3591408f3bbf24161bb5403a9cb75bad98bfcbed6bb57c8ef8d196c76690"
+  },
+  {
+    "case_id": "eval-F03-05",
+    "family": "F03",
+    "capability": "OPAQUE",
+    "schedule_hash": "60ae92d70eb34679aa6167b4f11875997ed76d0e9609e5a31d7e93b51b624151"
+  },
+  {
+    "case_id": "eval-F03-06",
+    "family": "F03",
+    "capability": "DURABLE",
+    "schedule_hash": "158f6cfa0481ae0d3cc8aa4d51523c612d82c48986959123bf0a1236b62251f9"
+  },
+  {
+    "case_id": "eval-F03-07",
+    "family": "F03",
+    "capability": "EXPIRING",
+    "schedule_hash": "45cffee399abbf3a4513aab015b9a9fa01df403fc30917997db6c5c1d56f1e30"
+  },
+  {
+    "case_id": "eval-F03-08",
+    "family": "F03",
+    "capability": "OPAQUE",
+    "schedule_hash": "88f49e99b293d6d1f2b6645ca083c1f5447af8cd82d45586103aa3ea77497215"
+  },
+  {
+    "case_id": "eval-F03-09",
+    "family": "F03",
+    "capability": "DURABLE",
+    "schedule_hash": "7cc8346f5749588a46a469645999b0760fb13a6c0877f2a4a4af791959bcdfc9"
+  },
+  {
+    "case_id": "eval-F04-00",
+    "family": "F04",
+    "capability": "DURABLE",
+    "schedule_hash": "0a418510d8de13649952c93bd0474b2d020438c682db4e036adf71b82dfae742"
+  },
+  {
+    "case_id": "eval-F04-01",
+    "family": "F04",
+    "capability": "EXPIRING",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F04-02",
+    "family": "F04",
+    "capability": "OPAQUE",
+    "schedule_hash": "d75fbe02eb7f210e3eb0d7c3d53afb6cee3f646465288d8ffb0b668b8c9e1d1f"
+  },
+  {
+    "case_id": "eval-F04-03",
+    "family": "F04",
+    "capability": "DURABLE",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F04-04",
+    "family": "F04",
+    "capability": "EXPIRING",
+    "schedule_hash": "7414691b3a7d158b96dd664544e6924dbba3a051bbe96e328f1245805a6701dc"
+  },
+  {
+    "case_id": "eval-F04-05",
+    "family": "F04",
+    "capability": "OPAQUE",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F04-06",
+    "family": "F04",
+    "capability": "DURABLE",
+    "schedule_hash": "95968827ff28cb72e87c0d8ba3a2e806268989ba8280cbe16959e6923be3211f"
+  },
+  {
+    "case_id": "eval-F04-07",
+    "family": "F04",
+    "capability": "EXPIRING",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F04-08",
+    "family": "F04",
+    "capability": "OPAQUE",
+    "schedule_hash": "45c5228c4b8d8600bd18bcb011890e6910c78bd5df75d188c98cb0a993152cdc"
+  },
+  {
+    "case_id": "eval-F04-09",
+    "family": "F04",
+    "capability": "DURABLE",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F05-00",
+    "family": "F05",
+    "capability": "DURABLE",
+    "schedule_hash": "3d3c1a6a2fc1c10f475fd8082a064f9ee8f5c28621280f17f293bd0f938812c4"
+  },
+  {
+    "case_id": "eval-F05-01",
+    "family": "F05",
+    "capability": "EXPIRING",
+    "schedule_hash": "a04f28b93aaf30c37838f37193c217fd4dba814721535e82382f0d990a0cca65"
+  },
+  {
+    "case_id": "eval-F05-02",
+    "family": "F05",
+    "capability": "OPAQUE",
+    "schedule_hash": "ca57828ed4e081b127d52ae2c1e7527fbbc31658de56ee64605429aa5e4ad9e4"
+  },
+  {
+    "case_id": "eval-F05-03",
+    "family": "F05",
+    "capability": "DURABLE",
+    "schedule_hash": "92d0d29b51e4689a8f52c7f622feb6a207e37424c1389c7288f3334ca9963992"
+  },
+  {
+    "case_id": "eval-F05-04",
+    "family": "F05",
+    "capability": "EXPIRING",
+    "schedule_hash": "3d3c1a6a2fc1c10f475fd8082a064f9ee8f5c28621280f17f293bd0f938812c4"
+  },
+  {
+    "case_id": "eval-F05-05",
+    "family": "F05",
+    "capability": "OPAQUE",
+    "schedule_hash": "a04f28b93aaf30c37838f37193c217fd4dba814721535e82382f0d990a0cca65"
+  },
+  {
+    "case_id": "eval-F05-06",
+    "family": "F05",
+    "capability": "DURABLE",
+    "schedule_hash": "ca57828ed4e081b127d52ae2c1e7527fbbc31658de56ee64605429aa5e4ad9e4"
+  },
+  {
+    "case_id": "eval-F05-07",
+    "family": "F05",
+    "capability": "EXPIRING",
+    "schedule_hash": "92d0d29b51e4689a8f52c7f622feb6a207e37424c1389c7288f3334ca9963992"
+  },
+  {
+    "case_id": "eval-F05-08",
+    "family": "F05",
+    "capability": "OPAQUE",
+    "schedule_hash": "3d3c1a6a2fc1c10f475fd8082a064f9ee8f5c28621280f17f293bd0f938812c4"
+  },
+  {
+    "case_id": "eval-F05-09",
+    "family": "F05",
+    "capability": "DURABLE",
+    "schedule_hash": "a04f28b93aaf30c37838f37193c217fd4dba814721535e82382f0d990a0cca65"
+  },
+  {
+    "case_id": "eval-F06-00",
+    "family": "F06",
+    "capability": "DURABLE",
+    "schedule_hash": "0c354b6c1236c0b679bf49049fad43a73351129ff64616b9d4997ce3d0cf25fe"
+  },
+  {
+    "case_id": "eval-F06-01",
+    "family": "F06",
+    "capability": "EXPIRING",
+    "schedule_hash": "3aa36d5283dde28885d4173484d07b74b80d44d560b892142c7e2a500cb42865"
+  },
+  {
+    "case_id": "eval-F06-02",
+    "family": "F06",
+    "capability": "OPAQUE",
+    "schedule_hash": "a3db3bbd8953334fc45366362814eaa767ae14109f0c90836bd673aab556cc18"
+  },
+  {
+    "case_id": "eval-F06-03",
+    "family": "F06",
+    "capability": "DURABLE",
+    "schedule_hash": "44129c67ee7b6f6603f569f77e27eee46babb5ccdb6c687ece7e6b0a85881ce4"
+  },
+  {
+    "case_id": "eval-F06-04",
+    "family": "F06",
+    "capability": "EXPIRING",
+    "schedule_hash": "0c354b6c1236c0b679bf49049fad43a73351129ff64616b9d4997ce3d0cf25fe"
+  },
+  {
+    "case_id": "eval-F06-05",
+    "family": "F06",
+    "capability": "OPAQUE",
+    "schedule_hash": "6fa4ce0d339b20fd75da01f109476c0ec12b378c2d365a1ea8d9247260c13939"
+  },
+  {
+    "case_id": "eval-F06-06",
+    "family": "F06",
+    "capability": "DURABLE",
+    "schedule_hash": "2a34ab1277376628e9fe50c903000374178eb8e22463a33a7dbd28e2198fd324"
+  },
+  {
+    "case_id": "eval-F06-07",
+    "family": "F06",
+    "capability": "EXPIRING",
+    "schedule_hash": "44129c67ee7b6f6603f569f77e27eee46babb5ccdb6c687ece7e6b0a85881ce4"
+  },
+  {
+    "case_id": "eval-F06-08",
+    "family": "F06",
+    "capability": "OPAQUE",
+    "schedule_hash": "2707e2354eb559a4346ef097749b39d4225c1794264a14a0e33f413291bb493e"
+  },
+  {
+    "case_id": "eval-F06-09",
+    "family": "F06",
+    "capability": "DURABLE",
+    "schedule_hash": "3aa36d5283dde28885d4173484d07b74b80d44d560b892142c7e2a500cb42865"
+  },
+  {
+    "case_id": "eval-F07-00",
+    "family": "F07",
+    "capability": "DURABLE",
+    "schedule_hash": "78ba40a2f14e824a812308795d2ee85a7ddf1b20bb370ee1d1aba1bd598eb9df"
+  },
+  {
+    "case_id": "eval-F07-01",
+    "family": "F07",
+    "capability": "EXPIRING",
+    "schedule_hash": "8f0e3086acdc775cb3062ef68293f55c1c5b9e3c316ba39382f555689b5a1610"
+  },
+  {
+    "case_id": "eval-F07-02",
+    "family": "F07",
+    "capability": "OPAQUE",
+    "schedule_hash": "c0a9a776967c9d413f6834782655ccc8ca57d9066f7aa847a1d0a364ed3f04e6"
+  },
+  {
+    "case_id": "eval-F07-03",
+    "family": "F07",
+    "capability": "DURABLE",
+    "schedule_hash": "ea6053c74189e66cf0d474b4cb88c386e288ccb21ee927fcdede89a744d6f720"
+  },
+  {
+    "case_id": "eval-F07-04",
+    "family": "F07",
+    "capability": "EXPIRING",
+    "schedule_hash": "78ba40a2f14e824a812308795d2ee85a7ddf1b20bb370ee1d1aba1bd598eb9df"
+  },
+  {
+    "case_id": "eval-F07-05",
+    "family": "F07",
+    "capability": "OPAQUE",
+    "schedule_hash": "8f0e3086acdc775cb3062ef68293f55c1c5b9e3c316ba39382f555689b5a1610"
+  },
+  {
+    "case_id": "eval-F07-06",
+    "family": "F07",
+    "capability": "DURABLE",
+    "schedule_hash": "c0a9a776967c9d413f6834782655ccc8ca57d9066f7aa847a1d0a364ed3f04e6"
+  },
+  {
+    "case_id": "eval-F07-07",
+    "family": "F07",
+    "capability": "EXPIRING",
+    "schedule_hash": "ea6053c74189e66cf0d474b4cb88c386e288ccb21ee927fcdede89a744d6f720"
+  },
+  {
+    "case_id": "eval-F07-08",
+    "family": "F07",
+    "capability": "OPAQUE",
+    "schedule_hash": "78ba40a2f14e824a812308795d2ee85a7ddf1b20bb370ee1d1aba1bd598eb9df"
+  },
+  {
+    "case_id": "eval-F07-09",
+    "family": "F07",
+    "capability": "DURABLE",
+    "schedule_hash": "8f0e3086acdc775cb3062ef68293f55c1c5b9e3c316ba39382f555689b5a1610"
+  },
+  {
+    "case_id": "eval-F08-00",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "schedule_hash": "961d9f26bdb3a0d1830e17d10c9f45d0939432b368fb73c6975970c625a61f4d"
+  },
+  {
+    "case_id": "eval-F08-01",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "schedule_hash": "db6a429ab86234ad102934c6b9a41f9c89f0ce0b766771eec7da7f4da6a0b8c1"
+  },
+  {
+    "case_id": "eval-F08-02",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "schedule_hash": "217eebdc66f2c50668d63d54d984c3594e6b304c823fb0c590950c5c7d951e5f"
+  },
+  {
+    "case_id": "eval-F08-03",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "schedule_hash": "61883de2e776f9facb19be3787c7037d2a0e53788a7823bd9b689120398aa8a5"
+  },
+  {
+    "case_id": "eval-F08-04",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "schedule_hash": "6eff00837a0bd734ea39ce7bf7e875533e79e46a132e573af1eaa0bd21d85c1a"
+  },
+  {
+    "case_id": "eval-F08-05",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "schedule_hash": "0cd9bf0a79ed182975c3873af05e885237da1b054fe3a7bd135c19e2b2f11e43"
+  },
+  {
+    "case_id": "eval-F08-06",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "schedule_hash": "5510884cc141614fa3424e81f9fb8070730f0fca650addbebc6bc50f7ca649b1"
+  },
+  {
+    "case_id": "eval-F08-07",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "schedule_hash": "b7d1e7934610aedd32547bbfda116527102af4bf1992fce7fad64217d44ca276"
+  },
+  {
+    "case_id": "eval-F08-08",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "schedule_hash": "029bdb80807ae7e176e42f439bcd1659c3f3d0c16eacf576b23697131e8c3635"
+  },
+  {
+    "case_id": "eval-F08-09",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "schedule_hash": "1c00de435f0027e25435225bbb2369b50cdae7d18daa266fb935df25514eb117"
+  },
+  {
+    "case_id": "eval-F09-00",
+    "family": "F09",
+    "capability": "DURABLE",
+    "schedule_hash": "47029f29b20e46aff0cec4461eb565b61d451e02031ece2d9c559ce3dd2573ea"
+  },
+  {
+    "case_id": "eval-F09-01",
+    "family": "F09",
+    "capability": "EXPIRING",
+    "schedule_hash": "e452bd8b4fb35ff35e92f98652ea7abf8a7e2dd0d3f0fd2c98fdef6f6564564b"
+  },
+  {
+    "case_id": "eval-F09-02",
+    "family": "F09",
+    "capability": "OPAQUE",
+    "schedule_hash": "f26c5ed4e0ba6f07e535cc319a1adf5c374e3e74cd222ff398c3d8f7358c426d"
+  },
+  {
+    "case_id": "eval-F09-03",
+    "family": "F09",
+    "capability": "DURABLE",
+    "schedule_hash": "e452bd8b4fb35ff35e92f98652ea7abf8a7e2dd0d3f0fd2c98fdef6f6564564b"
+  },
+  {
+    "case_id": "eval-F09-04",
+    "family": "F09",
+    "capability": "EXPIRING",
+    "schedule_hash": "47029f29b20e46aff0cec4461eb565b61d451e02031ece2d9c559ce3dd2573ea"
+  },
+  {
+    "case_id": "eval-F09-05",
+    "family": "F09",
+    "capability": "OPAQUE",
+    "schedule_hash": "e452bd8b4fb35ff35e92f98652ea7abf8a7e2dd0d3f0fd2c98fdef6f6564564b"
+  },
+  {
+    "case_id": "eval-F09-06",
+    "family": "F09",
+    "capability": "DURABLE",
+    "schedule_hash": "90e98d6d1d97789d14cbbe1361b07693f77b96af4ba9cf2b8bb1d60fc2d4248b"
+  },
+  {
+    "case_id": "eval-F09-07",
+    "family": "F09",
+    "capability": "EXPIRING",
+    "schedule_hash": "e452bd8b4fb35ff35e92f98652ea7abf8a7e2dd0d3f0fd2c98fdef6f6564564b"
+  },
+  {
+    "case_id": "eval-F09-08",
+    "family": "F09",
+    "capability": "OPAQUE",
+    "schedule_hash": "f26c5ed4e0ba6f07e535cc319a1adf5c374e3e74cd222ff398c3d8f7358c426d"
+  },
+  {
+    "case_id": "eval-F09-09",
+    "family": "F09",
+    "capability": "DURABLE",
+    "schedule_hash": "e452bd8b4fb35ff35e92f98652ea7abf8a7e2dd0d3f0fd2c98fdef6f6564564b"
+  },
+  {
+    "case_id": "eval-F10-00",
+    "family": "F10",
+    "capability": "DURABLE",
+    "schedule_hash": "4db6fc37c0cd6f6c14534841786766250a56e6380fbc1f570d6ee1fdf6352d48"
+  },
+  {
+    "case_id": "eval-F10-01",
+    "family": "F10",
+    "capability": "EXPIRING",
+    "schedule_hash": "7aa6babaeaa0b42d42912652b1a01a7834c5c85ad43ca925dcaf75cf492add47"
+  },
+  {
+    "case_id": "eval-F10-02",
+    "family": "F10",
+    "capability": "OPAQUE",
+    "schedule_hash": "1d060b381fff50d6ea13e90fea2c9ad2c654d006c95cb978c8c6357e61041509"
+  },
+  {
+    "case_id": "eval-F10-03",
+    "family": "F10",
+    "capability": "DURABLE",
+    "schedule_hash": "96a5f53ae51c008ed0034cb71410012fd9ec448ca6630f9357719324098c6f03"
+  },
+  {
+    "case_id": "eval-F10-04",
+    "family": "F10",
+    "capability": "EXPIRING",
+    "schedule_hash": "28efb93cb196f9210118799924b2d83fcd0986900085fb75e29ec0326b758933"
+  },
+  {
+    "case_id": "eval-F10-05",
+    "family": "F10",
+    "capability": "OPAQUE",
+    "schedule_hash": "eb54323447ee4cc68911ecf6b067bb4290f60b5e961c52d8602431df534d6e2a"
+  },
+  {
+    "case_id": "eval-F10-06",
+    "family": "F10",
+    "capability": "DURABLE",
+    "schedule_hash": "54acbd01bc25e8922bbe5f9a91f0b69cd884ee974a54b92f7614338f5590c83f"
+  },
+  {
+    "case_id": "eval-F10-07",
+    "family": "F10",
+    "capability": "EXPIRING",
+    "schedule_hash": "8406bc222b6bc75fc6b67e8b99a94782c5aab9dbeb5c89892482b36e92330d80"
+  },
+  {
+    "case_id": "eval-F10-08",
+    "family": "F10",
+    "capability": "OPAQUE",
+    "schedule_hash": "e670d8bc68980847cda25ff24ead9347fcdbd10cf52a0a71af5e2cf6e93899e4"
+  },
+  {
+    "case_id": "eval-F10-09",
+    "family": "F10",
+    "capability": "DURABLE",
+    "schedule_hash": "f608336a8982742f3eb3c44e0126d0c3af5a33d42d0d6cb5e11ca7ebdfc76b00"
+  },
+  {
+    "case_id": "eval-F11-00",
+    "family": "F11",
+    "capability": "DURABLE",
+    "schedule_hash": "c22d63bef00f74b1a4d00d656e2309373041be810a6eb6f3dd3dbefa3a5f852e"
+  },
+  {
+    "case_id": "eval-F11-01",
+    "family": "F11",
+    "capability": "EXPIRING",
+    "schedule_hash": "1a629a6ff19acdf142cbb24cfb9a2168838673ce8780c46652fb98100c94b1fa"
+  },
+  {
+    "case_id": "eval-F11-02",
+    "family": "F11",
+    "capability": "OPAQUE",
+    "schedule_hash": "633b1313ee86786d3dfd76039b823c50c06bb56a9a4781f12947e179dde10e8a"
+  },
+  {
+    "case_id": "eval-F11-03",
+    "family": "F11",
+    "capability": "DURABLE",
+    "schedule_hash": "201c2699bcec970389700bbe67d034b4ecb91588b550687438fdd2e25417bac1"
+  },
+  {
+    "case_id": "eval-F11-04",
+    "family": "F11",
+    "capability": "EXPIRING",
+    "schedule_hash": "203aca4abd52b5f75ce51ee9c72ea34f443ad841bf6c19e8e57bcf26f97a8341"
+  },
+  {
+    "case_id": "eval-F11-05",
+    "family": "F11",
+    "capability": "OPAQUE",
+    "schedule_hash": "d449cf215d0f1754be785026b1094fe28b24ec435458c728b6d305f2664212ca"
+  },
+  {
+    "case_id": "eval-F11-06",
+    "family": "F11",
+    "capability": "DURABLE",
+    "schedule_hash": "660b1948691449db5633bae59c463a0be8d8f7c470b1a30d925b6a308c018aa7"
+  },
+  {
+    "case_id": "eval-F11-07",
+    "family": "F11",
+    "capability": "EXPIRING",
+    "schedule_hash": "b8aa56abd244785ebdb9eb28327ada3b5917d7cc04698ab933a775095e70d354"
+  },
+  {
+    "case_id": "eval-F11-08",
+    "family": "F11",
+    "capability": "OPAQUE",
+    "schedule_hash": "b3c188d1e609c802bb981ebc2c91ad233ff71d829e6027c7bba74c82b6cb171e"
+  },
+  {
+    "case_id": "eval-F11-09",
+    "family": "F11",
+    "capability": "EXPIRING",
+    "schedule_hash": "b6b0671af133a4c91da370d3db7a55d4ffb9586efbdb37d18f681fe199f55157"
+  },
+  {
+    "case_id": "eval-F12-00",
+    "family": "F12",
+    "capability": "DURABLE",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F12-01",
+    "family": "F12",
+    "capability": "EXPIRING",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F12-02",
+    "family": "F12",
+    "capability": "OPAQUE",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F12-03",
+    "family": "F12",
+    "capability": "DURABLE",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F12-04",
+    "family": "F12",
+    "capability": "EXPIRING",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F12-05",
+    "family": "F12",
+    "capability": "OPAQUE",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F12-06",
+    "family": "F12",
+    "capability": "DURABLE",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F12-07",
+    "family": "F12",
+    "capability": "EXPIRING",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F12-08",
+    "family": "F12",
+    "capability": "OPAQUE",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  },
+  {
+    "case_id": "eval-F12-09",
+    "family": "F12",
+    "capability": "DURABLE",
+    "schedule_hash": "e2355472c891dc67c08adf024a8ed739785599841d77229353c360100a2437ed"
+  }
+]

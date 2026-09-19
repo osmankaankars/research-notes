@@ -1,0 +1,851 @@
+[
+  {
+    "observation": {
+      "requests": [
+        {
+          "ceiling_minor": 200000,
+          "intent_id": "i1",
+          "provider": "A",
+          "quantity": 100,
+          "revision_id": 1,
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      },
+      "tick": 0,
+      "known_operations": []
+    },
+    "action": {
+      "action": "create",
+      "operation_id": "i1:r1:o1",
+      "status": "OUTCOME_UNKNOWN"
+    },
+    "report": {
+      "completion_status": "pending_recovery"
+    }
+  },
+  {
+    "observation": {
+      "requests": [
+        {
+          "ceiling_minor": 200000,
+          "intent_id": "i1",
+          "provider": "B",
+          "quantity": 60,
+          "revision_id": 2,
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      },
+      "tick": 1,
+      "known_operations": [
+        {
+          "operation_id": "i1:r1:o1",
+          "revision_id": 1,
+          "payload": {
+            "intent_id": "i1",
+            "operation_id": "i1:r1:o1",
+            "provider": "A",
+            "quantity": 100,
+            "revision_id": 1,
+            "unit_price_minor": 2000
+          },
+          "state": "OUTCOME_UNKNOWN",
+          "reservation": 200000
+        }
+      ]
+    },
+    "action": {
+      "action": "lookup",
+      "operation_id": "i1:r1:o1",
+      "status": "UNKNOWN"
+    },
+    "report": {
+      "completion_status": "pending_recovery"
+    }
+  },
+  {
+    "observation": {
+      "requests": [
+        {
+          "ceiling_minor": 200000,
+          "intent_id": "i1",
+          "provider": "B",
+          "quantity": 60,
+          "revision_id": 2,
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      },
+      "tick": 2,
+      "known_operations": [
+        {
+          "operation_id": "i1:r1:o1",
+          "revision_id": 1,
+          "payload": {
+            "intent_id": "i1",
+            "operation_id": "i1:r1:o1",
+            "provider": "A",
+            "quantity": 100,
+            "revision_id": 1,
+            "unit_price_minor": 2000
+          },
+          "state": "OUTCOME_UNKNOWN",
+          "reservation": 200000
+        }
+      ]
+    },
+    "action": {
+      "action": "lookup",
+      "operation_id": "i1:r1:o1",
+      "status": "UNKNOWN"
+    },
+    "report": {
+      "completion_status": "pending_recovery"
+    }
+  },
+  {
+    "observation": {
+      "requests": [
+        {
+          "ceiling_minor": 200000,
+          "intent_id": "i1",
+          "provider": "B",
+          "quantity": 60,
+          "revision_id": 2,
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      },
+      "tick": 3,
+      "known_operations": [
+        {
+          "operation_id": "i1:r1:o1",
+          "revision_id": 1,
+          "payload": {
+            "intent_id": "i1",
+            "operation_id": "i1:r1:o1",
+            "provider": "A",
+            "quantity": 100,
+            "revision_id": 1,
+            "unit_price_minor": 2000
+          },
+          "state": "OUTCOME_UNKNOWN",
+          "reservation": 200000
+        }
+      ]
+    },
+    "action": {
+      "action": "lookup",
+      "operation_id": "i1:r1:o1",
+      "status": "UNKNOWN"
+    },
+    "report": {
+      "completion_status": "pending_recovery"
+    }
+  },
+  {
+    "observation": {
+      "requests": [
+        {
+          "ceiling_minor": 200000,
+          "intent_id": "i1",
+          "provider": "B",
+          "quantity": 60,
+          "revision_id": 2,
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      },
+      "tick": 4,
+      "known_operations": [
+        {
+          "operation_id": "i1:r1:o1",
+          "revision_id": 1,
+          "payload": {
+            "intent_id": "i1",
+            "operation_id": "i1:r1:o1",
+            "provider": "A",
+            "quantity": 100,
+            "revision_id": 1,
+            "unit_price_minor": 2000
+          },
+          "state": "OUTCOME_UNKNOWN",
+          "reservation": 200000
+        }
+      ]
+    },
+    "action": {
+      "action": "lookup",
+      "operation_id": "i1:r1:o1",
+      "status": "UNKNOWN"
+    },
+    "report": {
+      "completion_status": "pending_recovery"
+    }
+  },
+  {
+    "observation": {
+      "requests": [
+        {
+          "ceiling_minor": 200000,
+          "intent_id": "i1",
+          "provider": "B",
+          "quantity": 60,
+          "revision_id": 2,
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      },
+      "tick": 5,
+      "known_operations": [
+        {
+          "operation_id": "i1:r1:o1",
+          "revision_id": 1,
+          "payload": {
+            "intent_id": "i1",
+            "operation_id": "i1:r1:o1",
+            "provider": "A",
+            "quantity": 100,
+            "revision_id": 1,
+            "unit_price_minor": 2000
+          },
+          "state": "OUTCOME_UNKNOWN",
+          "reservation": 200000
+        }
+      ]
+    },
+    "action": {
+      "action": "lookup",
+      "operation_id": "i1:r1:o1",
+      "status": "UNKNOWN"
+    },
+    "report": {
+      "completion_status": "pending_recovery"
+    }
+  },
+  {
+    "observation": {
+      "requests": [
+        {
+          "ceiling_minor": 200000,
+          "intent_id": "i1",
+          "provider": "B",
+          "quantity": 60,
+          "revision_id": 2,
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      },
+      "tick": 6,
+      "known_operations": [
+        {
+          "operation_id": "i1:r1:o1",
+          "revision_id": 1,
+          "payload": {
+            "intent_id": "i1",
+            "operation_id": "i1:r1:o1",
+            "provider": "A",
+            "quantity": 100,
+            "revision_id": 1,
+            "unit_price_minor": 2000
+          },
+          "state": "OUTCOME_UNKNOWN",
+          "reservation": 200000
+        }
+      ]
+    },
+    "action": {
+      "action": "lookup",
+      "operation_id": "i1:r1:o1",
+      "status": "UNKNOWN"
+    },
+    "report": {
+      "completion_status": "pending_recovery"
+    }
+  },
+  {
+    "observation": {
+      "requests": [
+        {
+          "ceiling_minor": 200000,
+          "intent_id": "i1",
+          "provider": "B",
+          "quantity": 60,
+          "revision_id": 2,
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      },
+      "tick": 7,
+      "known_operations": [
+        {
+          "operation_id": "i1:r1:o1",
+          "revision_id": 1,
+          "payload": {
+            "intent_id": "i1",
+            "operation_id": "i1:r1:o1",
+            "provider": "A",
+            "quantity": 100,
+            "revision_id": 1,
+            "unit_price_minor": 2000
+          },
+          "state": "OUTCOME_UNKNOWN",
+          "reservation": 200000
+        }
+      ]
+    },
+    "action": {
+      "action": "lookup",
+      "operation_id": "i1:r1:o1",
+      "status": "UNKNOWN"
+    },
+    "report": {
+      "completion_status": "pending_recovery"
+    }
+  },
+  {
+    "observation": {
+      "requests": [
+        {
+          "ceiling_minor": 200000,
+          "intent_id": "i1",
+          "provider": "B",
+          "quantity": 60,
+          "revision_id": 2,
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      },
+      "tick": 8,
+      "known_operations": [
+        {
+          "operation_id": "i1:r1:o1",
+          "revision_id": 1,
+          "payload": {
+            "intent_id": "i1",
+            "operation_id": "i1:r1:o1",
+            "provider": "A",
+            "quantity": 100,
+            "revision_id": 1,
+            "unit_price_minor": 2000
+          },
+          "state": "OUTCOME_UNKNOWN",
+          "reservation": 200000
+        }
+      ]
+    },
+    "action": {
+      "action": "lookup",
+      "operation_id": "i1:r1:o1",
+      "status": "UNKNOWN"
+    },
+    "report": {
+      "completion_status": "pending_recovery"
+    }
+  },
+  {
+    "observation": {
+      "requests": [
+        {
+          "ceiling_minor": 200000,
+          "intent_id": "i1",
+          "provider": "B",
+          "quantity": 60,
+          "revision_id": 2,
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      },
+      "tick": 9,
+      "known_operations": [
+        {
+          "operation_id": "i1:r1:o1",
+          "revision_id": 1,
+          "payload": {
+            "intent_id": "i1",
+            "operation_id": "i1:r1:o1",
+            "provider": "A",
+            "quantity": 100,
+            "revision_id": 1,
+            "unit_price_minor": 2000
+          },
+          "state": "OUTCOME_UNKNOWN",
+          "reservation": 200000
+        }
+      ]
+    },
+    "action": {
+      "action": "lookup",
+      "operation_id": "i1:r1:o1",
+      "status": "UNKNOWN"
+    },
+    "report": {
+      "completion_status": "pending_recovery"
+    }
+  },
+  {
+    "observation": {
+      "requests": [
+        {
+          "ceiling_minor": 200000,
+          "intent_id": "i1",
+          "provider": "B",
+          "quantity": 60,
+          "revision_id": 2,
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      },
+      "tick": 10,
+      "known_operations": [
+        {
+          "operation_id": "i1:r1:o1",
+          "revision_id": 1,
+          "payload": {
+            "intent_id": "i1",
+            "operation_id": "i1:r1:o1",
+            "provider": "A",
+            "quantity": 100,
+            "revision_id": 1,
+            "unit_price_minor": 2000
+          },
+          "state": "OUTCOME_UNKNOWN",
+          "reservation": 200000
+        }
+      ]
+    },
+    "action": {
+      "action": "lookup",
+      "operation_id": "i1:r1:o1",
+      "status": "UNKNOWN"
+    },
+    "report": {
+      "completion_status": "pending_recovery"
+    }
+  },
+  {
+    "observation": {
+      "requests": [
+        {
+          "ceiling_minor": 200000,
+          "intent_id": "i1",
+          "provider": "B",
+          "quantity": 60,
+          "revision_id": 2,
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      },
+      "tick": 11,
+      "known_operations": [
+        {
+          "operation_id": "i1:r1:o1",
+          "revision_id": 1,
+          "payload": {
+            "intent_id": "i1",
+            "operation_id": "i1:r1:o1",
+            "provider": "A",
+            "quantity": 100,
+            "revision_id": 1,
+            "unit_price_minor": 2000
+          },
+          "state": "OUTCOME_UNKNOWN",
+          "reservation": 200000
+        }
+      ]
+    },
+    "action": {
+      "action": "lookup",
+      "operation_id": "i1:r1:o1",
+      "status": "UNKNOWN"
+    },
+    "report": {
+      "completion_status": "pending_recovery"
+    }
+  },
+  {
+    "observation": {
+      "requests": [
+        {
+          "ceiling_minor": 200000,
+          "intent_id": "i1",
+          "provider": "B",
+          "quantity": 60,
+          "revision_id": 2,
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      },
+      "tick": 12,
+      "known_operations": [
+        {
+          "operation_id": "i1:r1:o1",
+          "revision_id": 1,
+          "payload": {
+            "intent_id": "i1",
+            "operation_id": "i1:r1:o1",
+            "provider": "A",
+            "quantity": 100,
+            "revision_id": 1,
+            "unit_price_minor": 2000
+          },
+          "state": "OUTCOME_UNKNOWN",
+          "reservation": 200000
+        }
+      ]
+    },
+    "action": {
+      "action": "lookup",
+      "operation_id": "i1:r1:o1",
+      "status": "UNKNOWN"
+    },
+    "report": {
+      "completion_status": "pending_recovery"
+    }
+  },
+  {
+    "observation": {
+      "requests": [
+        {
+          "ceiling_minor": 200000,
+          "intent_id": "i1",
+          "provider": "B",
+          "quantity": 60,
+          "revision_id": 2,
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      },
+      "tick": 13,
+      "known_operations": [
+        {
+          "operation_id": "i1:r1:o1",
+          "revision_id": 1,
+          "payload": {
+            "intent_id": "i1",
+            "operation_id": "i1:r1:o1",
+            "provider": "A",
+            "quantity": 100,
+            "revision_id": 1,
+            "unit_price_minor": 2000
+          },
+          "state": "OUTCOME_UNKNOWN",
+          "reservation": 200000
+        }
+      ]
+    },
+    "action": {
+      "action": "lookup",
+      "operation_id": "i1:r1:o1",
+      "status": "UNKNOWN"
+    },
+    "report": {
+      "completion_status": "pending_recovery"
+    }
+  },
+  {
+    "observation": {
+      "requests": [
+        {
+          "ceiling_minor": 200000,
+          "intent_id": "i1",
+          "provider": "B",
+          "quantity": 60,
+          "revision_id": 2,
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      },
+      "tick": 14,
+      "known_operations": [
+        {
+          "operation_id": "i1:r1:o1",
+          "revision_id": 1,
+          "payload": {
+            "intent_id": "i1",
+            "operation_id": "i1:r1:o1",
+            "provider": "A",
+            "quantity": 100,
+            "revision_id": 1,
+            "unit_price_minor": 2000
+          },
+          "state": "OUTCOME_UNKNOWN",
+          "reservation": 200000
+        }
+      ]
+    },
+    "action": {
+      "action": "lookup",
+      "operation_id": "i1:r1:o1",
+      "status": "UNKNOWN"
+    },
+    "report": {
+      "completion_status": "pending_recovery"
+    }
+  },
+  {
+    "observation": {
+      "requests": [
+        {
+          "ceiling_minor": 200000,
+          "intent_id": "i1",
+          "provider": "B",
+          "quantity": 60,
+          "revision_id": 2,
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      },
+      "tick": 15,
+      "known_operations": [
+        {
+          "operation_id": "i1:r1:o1",
+          "revision_id": 1,
+          "payload": {
+            "intent_id": "i1",
+            "operation_id": "i1:r1:o1",
+            "provider": "A",
+            "quantity": 100,
+            "revision_id": 1,
+            "unit_price_minor": 2000
+          },
+          "state": "OUTCOME_UNKNOWN",
+          "reservation": 200000
+        }
+      ]
+    },
+    "action": {
+      "action": "lookup",
+      "operation_id": "i1:r1:o1",
+      "status": "UNKNOWN"
+    },
+    "report": {
+      "completion_status": "pending_recovery"
+    }
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "purpose": "Local pre-evaluation freeze; not public preregistration",
+  "files": {
+    "receiptbench/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "receiptbench/contracts.py": "68e749771230e981e3c74c80f14866d3ecc0e4cf1fcd7c646ee6805a86953961",
+    "receiptbench/database.py": "b4e0eae6dfca5649e394ea91becdb97b04815768fb95fd02f158947a8ba83f6d",
+    "receiptbench/evaluator.py": "f5b58855530959e3c46ea446fda7ade420bc45027dc36b92530e341223539dcb",
+    "receiptbench/executor.py": "223e42af326b89e2cd02f44cc927b6f65e3f9d070d8f17dd292814e2714317f1",
+    "receiptbench/http_supplier.py": "6a412e7b55eead3480f13174c6aa6c548a35bd7ece50cd2fcf515241b51e15b4",
+    "receiptbench/intent_store.py": "f9ffa22d34dbbce93cff44081aca5c94ab0a23af2e3ef7ec7ec3c53df3383316",
+    "receiptbench/runner.py": "d2136e56b9b8c4bbafe258f7bf4b2afca19950b795165df60f566aa06866b03a",
+    "receiptbench/scenarios.py": "1db786d3ddd096edf56ac6c43d025f3375e5f2918a85e78269a2a5bf4112d3ce",
+    "receiptbench/supplier.py": "3eb98b68784da27e056a83d12d897d70ce096e3731ed4f4055ff5faf638124b2",
+    "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/test_http_restart.py": "3520140d1f323e86629ba8f32c7887f3a79e76f054070f5eda5acf55e685027a",
+    "tests/test_runner.py": "7a949bf381ed9759c01c979d45a7f6dd7f5f5235fd896c27e2ee55fe67e43a4e",
+    "tests/test_scenarios_evaluator.py": "36b9ed87f29fba9f9135e0d7ac2b3bcf471342ebee8caa8681cd8663ea984b7c",
+    "tests/test_store_executor.py": "9e3a18c43a9fd0fa2fcad36003834e6d167c9b10f64320d592ba7fabf5a00621",
+    "tests/test_supplier.py": "5a85a0a0de9ba92ddba89587a68eca9bae21ecc14ff5b90ed6ebaf44b1ff3f3b",
+    "protocol/allocation.json": "bcb2c0752c169c51374aebab20ec517c05fa9fb5dac4b7993c947c1efb55388f",
+    "protocol/cases_dev.json": "9702b8b77d6eb256e0d89f4a773468ee8ddff09a1956de7974a2a8592b07e57b",
+    "protocol/cases_eval.json": "667528320cbf56748f63cdd1cd7cc7b6ba32cf44bc79fb8d8c7cbb7b3cca207f"
+  },
+  "seeded_outcomes_exist_at_freeze": false,
+  "model_calls": 0
+}

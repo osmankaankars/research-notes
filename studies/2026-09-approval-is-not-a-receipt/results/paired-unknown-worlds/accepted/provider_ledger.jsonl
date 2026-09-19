@@ -1,0 +1,1 @@
+{"event_id":"A:1","kind":"CREATE","operation":{"intent_id":"i1","operation_id":"i1:r1:o1","provider":"A","quantity":100,"revision_id":1,"unit_price_minor":2000},"operation_id":"i1:r1:o1","phase":1,"provider":"A","reverses":null,"seq":1,"tick":0}

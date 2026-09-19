@@ -1,0 +1,20 @@
+{
+  "primary_episodes_checked": 360,
+  "http_episodes_checked": 78,
+  "logical_transport_matches": 78,
+  "frozen_files_unchanged": 19,
+  "new_model_calls": 0,
+  "checks": "Raw SQLite ledger and event exports; independent physical goals; reservations; all means/counts; HTTP parity",
+  "complete_component_reach": {
+    "direct_all_reached": 278,
+    "direct_not_all_reached": 22,
+    "direct_not_applicable": 60
+  },
+  "coverage_caveat": "The primary fault_exercised boolean means any environment fault observed, not that every compound fault stage was reached. Unreached components stay in hazard_coverage.csv and are not passed stress recoveries.",
+  "paired_E2_minus_E1": {
+    "additional_completions": 14,
+    "invalid_effect_change": -15,
+    "additional_calls": 154
+  },
+  "independence_boundary": "Separate arithmetic and direct database inspection, not an external or fresh-context human review."
+}

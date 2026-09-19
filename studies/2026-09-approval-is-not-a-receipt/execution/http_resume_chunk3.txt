@@ -1,0 +1,15 @@
+Completed eval-F11-00 intent_scoped
+Completed eval-F11-01 request_only
+Completed eval-F11-01 operation_scoped
+Completed eval-F11-01 intent_scoped
+Completed eval-F11-02 request_only
+Completed eval-F11-02 operation_scoped
+Completed eval-F11-02 intent_scoped
+Completed eval-F12-00 request_only
+Completed eval-F12-00 operation_scoped
+Completed eval-F12-00 intent_scoped
+Completed eval-F12-02 request_only
+Completed eval-F12-02 operation_scoped
+Completed eval-F12-02 intent_scoped
+This chunk 13 seconds 12.207708776000118
+MATRIX COMPLETE 78

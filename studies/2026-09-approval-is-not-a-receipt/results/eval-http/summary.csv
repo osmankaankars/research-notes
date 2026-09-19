@@ -1,0 +1,13 @@
+capability,strategy,cases,completed_correctly,safe_unresolved,safe_blocked,invalid_effects,duplicate_effects,false_success_claim,fault_exercised,fault_not_exercised,tool_calls,query_count,retry_count,unknown_liability_minor_ticks,failed_episodes,episodes_with_invalid_effects,episodes_with_duplicates,mean_tool_calls
+ALL,request_only,26,6,0,0,18,6,20,22,0,46,0,0,45692000,20,16,6,1.7692307692307692
+ALL,operation_scoped,26,16,4,0,6,0,6,22,0,119,81,4,31216200,6,6,0,4.576923076923077
+ALL,intent_scoped,26,20,6,0,0,0,0,22,0,163,122,4,30633050,0,0,0,6.269230769230769
+DURABLE,request_only,11,3,0,0,7,2,8,9,0,19,0,0,16000000,8,6,2,1.7272727272727273
+DURABLE,operation_scoped,11,9,0,0,2,0,2,9,0,23,5,4,5000000,2,2,0,2.090909090909091
+DURABLE,intent_scoped,11,11,0,0,0,0,0,9,0,30,10,4,2800000,0,0,0,2.727272727272727
+EXPIRING,request_only,4,0,0,0,4,2,4,4,0,8,0,0,10540000,4,4,2,2.0
+EXPIRING,operation_scoped,4,2,0,0,2,0,2,4,0,22,16,0,7064200,2,2,0,5.5
+EXPIRING,intent_scoped,4,4,0,0,0,0,0,4,0,31,23,0,5090050,0,0,0,7.75
+OPAQUE,request_only,11,3,0,0,7,2,8,9,0,19,0,0,19152000,8,6,2,1.7272727272727273
+OPAQUE,operation_scoped,11,5,4,0,2,0,2,9,0,74,60,0,19152000,2,2,0,6.7272727272727275
+OPAQUE,intent_scoped,11,5,6,0,0,0,0,9,0,102,89,0,22743000,0,0,0,9.272727272727273

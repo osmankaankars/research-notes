@@ -1,0 +1,150 @@
+[
+  {
+    "case_id": "diagnostic-revision-accepted",
+    "family": "F10",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 100,
+          "ceiling_minor": 200000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 3
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 3
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 60,
+            "ceiling_minor": 200000,
+            "provider": "B",
+            "unit_price_minor": 2000
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "diagnostic-revision-not_accepted",
+    "family": "F10",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 100,
+          "ceiling_minor": 200000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_before_once",
+          "release_tick": 3
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 3
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 60,
+            "ceiling_minor": 200000,
+            "provider": "B",
+            "unit_price_minor": 2000
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  }
+]

@@ -1,0 +1,4 @@
+capability,cases,completed,unresolved,budget_blocked
+DURABLE,43,41,0,2
+EXPIRING,44,42,0,2
+OPAQUE,33,14,18,1

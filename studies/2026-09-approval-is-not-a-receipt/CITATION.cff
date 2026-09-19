@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite the article and the versioned study when using these materials."
+title: "Approval Is Not a Receipt"
+type: software
+authors:
+  - family-names: "Kars"
+    given-names: "Osman Kaan"
+version: "1.0.0"
+date-released: "2026-09-19"
+repository-code: "https://github.com/osmankaankars/research-notes"
+abstract: "A controlled purchase-workflow study of request revisions, uncertain external effects and provider-dependent recovery."
+keywords:
+  - reliability
+  - idempotency
+  - enterprise systems
+  - reproducible research

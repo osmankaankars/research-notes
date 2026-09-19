@@ -10,13 +10,17 @@ together. Experimental findings are distinguished from interpretation.
 
 | Date | Study | Focus |
 |---|---|---|
-| September 2026 | [Faster AI Is Not the Same as Better Delegation](studies/2026-09-autonomous-erp-review/ARTICLE.md) | Review costs, response delays and service trade-offs in a scripted inventory simulation |
+| September 2026 | [Approval Is Not a Receipt](studies/2026-09-approval-is-not-a-receipt/ARTICLE.md) | Request revisions, uncertain external effects, supplier guarantees and safe recovery |
 
-[Technical study and reproduction](studies/2026-09-autonomous-erp-review/README.md)
+## Latest study
 
-The first study uses synthetic demand and four scripted review policies. It includes
-no human participants or new language-model calls. The article discusses their
-implications without presenting the simulation as a production ERP benchmark.
+[Technical study and reproduction](studies/2026-09-approval-is-not-a-receipt/README.md)
+
+Approval Is Not a Receipt compares three deterministic execution strategies on
+120 fixed synthetic cases. It includes supplier ledgers, a 26-case local HTTP
+confirmation and an independent arithmetic path for checking the results. No
+human participants, language-model inference or production ERP connections
+were involved.
 
 ## Organisation
 

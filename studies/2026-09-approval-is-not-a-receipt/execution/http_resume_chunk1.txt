@@ -1,0 +1,25 @@
+Completed eval-F03-02 intent_scoped
+Completed eval-F04-00 request_only
+Completed eval-F04-00 operation_scoped
+Completed eval-F04-00 intent_scoped
+Completed eval-F04-02 request_only
+Completed eval-F04-02 operation_scoped
+Completed eval-F04-02 intent_scoped
+Completed eval-F05-00 request_only
+Completed eval-F05-00 operation_scoped
+Completed eval-F05-00 intent_scoped
+Completed eval-F05-02 request_only
+Completed eval-F05-02 operation_scoped
+Completed eval-F05-02 intent_scoped
+Completed eval-F06-00 request_only
+Completed eval-F06-00 operation_scoped
+Completed eval-F06-00 intent_scoped
+Completed eval-F06-02 request_only
+Completed eval-F06-02 operation_scoped
+Completed eval-F06-02 intent_scoped
+Completed eval-F07-00 request_only
+Completed eval-F07-00 operation_scoped
+Completed eval-F07-00 intent_scoped
+Completed eval-F07-02 request_only
+Completed eval-F07-02 operation_scoped
+This chunk 24 seconds 19.241709450999906

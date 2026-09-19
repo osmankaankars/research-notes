@@ -1,0 +1,7259 @@
+[
+  {
+    "case_id": "eval-F01-00",
+    "family": "F01",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 100,
+          "ceiling_minor": 200000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F01-01",
+    "family": "F01",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 107,
+          "ceiling_minor": 219350,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 877400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F01-02",
+    "family": "F01",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 114,
+          "ceiling_minor": 239400,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 957600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F01-03",
+    "family": "F01",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 121,
+          "ceiling_minor": 260150,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1040600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F01-04",
+    "family": "F01",
+    "capability": "EXPIRING",
+    "retention_ticks": 2,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 128,
+          "ceiling_minor": 256000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1024000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F01-05",
+    "family": "F01",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 135,
+          "ceiling_minor": 276750,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1107000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F01-06",
+    "family": "F01",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 142,
+          "ceiling_minor": 298200,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 1192800,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F01-07",
+    "family": "F01",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 149,
+          "ceiling_minor": 320350,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1281400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F01-08",
+    "family": "F01",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 156,
+          "ceiling_minor": 312000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1248000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F01-09",
+    "family": "F01",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 163,
+          "ceiling_minor": 334150,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1336600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F02-00",
+    "family": "F02",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 100,
+          "ceiling_minor": 200000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "irrelevant_change",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "catalog_comment": "fixture-eval-0"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F02-01",
+    "family": "F02",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 107,
+          "ceiling_minor": 219350,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 877400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "irrelevant_change",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "catalog_comment": "fixture-eval-1"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F02-02",
+    "family": "F02",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 114,
+          "ceiling_minor": 239400,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 957600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "irrelevant_change",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "catalog_comment": "fixture-eval-2"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F02-03",
+    "family": "F02",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 121,
+          "ceiling_minor": 260150,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1040600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "irrelevant_change",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "catalog_comment": "fixture-eval-3"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F02-04",
+    "family": "F02",
+    "capability": "EXPIRING",
+    "retention_ticks": 2,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 128,
+          "ceiling_minor": 256000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1024000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "irrelevant_change",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "catalog_comment": "fixture-eval-4"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F02-05",
+    "family": "F02",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 135,
+          "ceiling_minor": 276750,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1107000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "irrelevant_change",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "catalog_comment": "fixture-eval-5"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F02-06",
+    "family": "F02",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 142,
+          "ceiling_minor": 298200,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 1192800,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "irrelevant_change",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "catalog_comment": "fixture-eval-6"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F02-07",
+    "family": "F02",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 149,
+          "ceiling_minor": 320350,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1281400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "irrelevant_change",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "catalog_comment": "fixture-eval-7"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F02-08",
+    "family": "F02",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 156,
+          "ceiling_minor": 312000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1248000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "irrelevant_change",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "catalog_comment": "fixture-eval-8"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F02-09",
+    "family": "F02",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 163,
+          "ceiling_minor": 334150,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1336600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "irrelevant_change",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "catalog_comment": "fixture-eval-9"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F03-00",
+    "family": "F03",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 100,
+          "ceiling_minor": 200000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 60,
+            "ceiling_minor": 200000,
+            "provider": "B",
+            "unit_price_minor": 2000
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F03-01",
+    "family": "F03",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 107,
+          "ceiling_minor": 219350,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 877400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 64,
+            "ceiling_minor": 219350,
+            "provider": "B",
+            "unit_price_minor": 2050
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F03-02",
+    "family": "F03",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 114,
+          "ceiling_minor": 239400,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 957600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 68,
+            "ceiling_minor": 239400,
+            "provider": "B",
+            "unit_price_minor": 2100
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F03-03",
+    "family": "F03",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 121,
+          "ceiling_minor": 260150,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1040600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 72,
+            "ceiling_minor": 260150,
+            "provider": "B",
+            "unit_price_minor": 2150
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F03-04",
+    "family": "F03",
+    "capability": "EXPIRING",
+    "retention_ticks": 2,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 128,
+          "ceiling_minor": 256000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1024000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 76,
+            "ceiling_minor": 256000,
+            "provider": "B",
+            "unit_price_minor": 2000
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F03-05",
+    "family": "F03",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 135,
+          "ceiling_minor": 276750,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1107000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 81,
+            "ceiling_minor": 276750,
+            "provider": "B",
+            "unit_price_minor": 2050
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F03-06",
+    "family": "F03",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 142,
+          "ceiling_minor": 298200,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 1192800,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 85,
+            "ceiling_minor": 298200,
+            "provider": "B",
+            "unit_price_minor": 2100
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F03-07",
+    "family": "F03",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 149,
+          "ceiling_minor": 320350,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1281400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 89,
+            "ceiling_minor": 320350,
+            "provider": "B",
+            "unit_price_minor": 2150
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F03-08",
+    "family": "F03",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 156,
+          "ceiling_minor": 312000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1248000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 93,
+            "ceiling_minor": 312000,
+            "provider": "B",
+            "unit_price_minor": 2000
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F03-09",
+    "family": "F03",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 163,
+          "ceiling_minor": 334150,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1336600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "proposal",
+          "offset": 0,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 97,
+            "ceiling_minor": 334150,
+            "provider": "B",
+            "unit_price_minor": 2050
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F04-00",
+    "family": "F04",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 100,
+          "ceiling_minor": 200000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 100,
+          "ceiling_minor": 200000,
+          "provider": "B",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 300000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "budget",
+          "anchor": "first_dispatch",
+          "offset": 4,
+          "data": {
+            "amount": 600000
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": true,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F04-01",
+    "family": "F04",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 107,
+          "ceiling_minor": 219350,
+          "provider": "A",
+          "unit_price_minor": 2050
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 107,
+          "ceiling_minor": 219350,
+          "provider": "B",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 329025,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": true,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F04-02",
+    "family": "F04",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 114,
+          "ceiling_minor": 239400,
+          "provider": "A",
+          "unit_price_minor": 2100
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 114,
+          "ceiling_minor": 239400,
+          "provider": "B",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 359100,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "budget",
+          "anchor": "first_dispatch",
+          "offset": 4,
+          "data": {
+            "amount": 718200
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": true,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F04-03",
+    "family": "F04",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 121,
+          "ceiling_minor": 260150,
+          "provider": "A",
+          "unit_price_minor": 2150
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 121,
+          "ceiling_minor": 260150,
+          "provider": "B",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 390225,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": true,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F04-04",
+    "family": "F04",
+    "capability": "EXPIRING",
+    "retention_ticks": 2,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 128,
+          "ceiling_minor": 256000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 128,
+          "ceiling_minor": 256000,
+          "provider": "B",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 384000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "budget",
+          "anchor": "first_dispatch",
+          "offset": 4,
+          "data": {
+            "amount": 768000
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": true,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F04-05",
+    "family": "F04",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 135,
+          "ceiling_minor": 276750,
+          "provider": "A",
+          "unit_price_minor": 2050
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 135,
+          "ceiling_minor": 276750,
+          "provider": "B",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 415125,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": true,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F04-06",
+    "family": "F04",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 142,
+          "ceiling_minor": 298200,
+          "provider": "A",
+          "unit_price_minor": 2100
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 142,
+          "ceiling_minor": 298200,
+          "provider": "B",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 447300,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "budget",
+          "anchor": "first_dispatch",
+          "offset": 4,
+          "data": {
+            "amount": 894600
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": true,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F04-07",
+    "family": "F04",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 149,
+          "ceiling_minor": 320350,
+          "provider": "A",
+          "unit_price_minor": 2150
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 149,
+          "ceiling_minor": 320350,
+          "provider": "B",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 480525,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": true,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F04-08",
+    "family": "F04",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 156,
+          "ceiling_minor": 312000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 156,
+          "ceiling_minor": 312000,
+          "provider": "B",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 468000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "budget",
+          "anchor": "first_dispatch",
+          "offset": 4,
+          "data": {
+            "amount": 936000
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": true,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F04-09",
+    "family": "F04",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 163,
+          "ceiling_minor": 334150,
+          "provider": "A",
+          "unit_price_minor": 2050
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 163,
+          "ceiling_minor": 334150,
+          "provider": "B",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 501225,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": true,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F05-00",
+    "family": "F05",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 100,
+          "ceiling_minor": 200000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 3
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 3
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F05-01",
+    "family": "F05",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 107,
+          "ceiling_minor": 219350,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 877400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 4
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 4
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F05-02",
+    "family": "F05",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 114,
+          "ceiling_minor": 239400,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 957600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 5
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 5
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F05-03",
+    "family": "F05",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 121,
+          "ceiling_minor": 260150,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1040600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 6
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 6
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F05-04",
+    "family": "F05",
+    "capability": "EXPIRING",
+    "retention_ticks": 2,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 128,
+          "ceiling_minor": 256000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1024000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 3
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 3
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F05-05",
+    "family": "F05",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 135,
+          "ceiling_minor": 276750,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1107000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 4
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 4
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F05-06",
+    "family": "F05",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 142,
+          "ceiling_minor": 298200,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 1192800,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 5
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 5
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F05-07",
+    "family": "F05",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 149,
+          "ceiling_minor": 320350,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1281400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 6
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 6
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F05-08",
+    "family": "F05",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 156,
+          "ceiling_minor": 312000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1248000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 3
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 3
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F05-09",
+    "family": "F05",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 163,
+          "ceiling_minor": 334150,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1336600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 4
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 4
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F06-00",
+    "family": "F06",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 100,
+          "ceiling_minor": 200000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_before_once",
+          "release_tick": 3
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 3
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "fence_absent",
+          "anchor": "first_create",
+          "offset": 3,
+          "data": {
+            "provider": "A",
+            "operation_id": "i1:r1:o1"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F06-01",
+    "family": "F06",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 107,
+          "ceiling_minor": 219350,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 877400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_before_once",
+          "release_tick": 4
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 4
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "fence_absent",
+          "anchor": "first_create",
+          "offset": 4,
+          "data": {
+            "provider": "A",
+            "operation_id": "i1:r1:o1"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F06-02",
+    "family": "F06",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 114,
+          "ceiling_minor": 239400,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 957600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_before_once",
+          "release_tick": 5
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 5
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F06-03",
+    "family": "F06",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 121,
+          "ceiling_minor": 260150,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1040600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_before_once",
+          "release_tick": 6
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 6
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "fence_absent",
+          "anchor": "first_create",
+          "offset": 6,
+          "data": {
+            "provider": "A",
+            "operation_id": "i1:r1:o1"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F06-04",
+    "family": "F06",
+    "capability": "EXPIRING",
+    "retention_ticks": 2,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 128,
+          "ceiling_minor": 256000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1024000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_before_once",
+          "release_tick": 3
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 3
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "fence_absent",
+          "anchor": "first_create",
+          "offset": 3,
+          "data": {
+            "provider": "A",
+            "operation_id": "i1:r1:o1"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F06-05",
+    "family": "F06",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 135,
+          "ceiling_minor": 276750,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1107000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_before_once",
+          "release_tick": 4
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 4
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F06-06",
+    "family": "F06",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 142,
+          "ceiling_minor": 298200,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 1192800,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_before_once",
+          "release_tick": 5
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 5
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "fence_absent",
+          "anchor": "first_create",
+          "offset": 5,
+          "data": {
+            "provider": "A",
+            "operation_id": "i1:r1:o1"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F06-07",
+    "family": "F06",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 149,
+          "ceiling_minor": 320350,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1281400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_before_once",
+          "release_tick": 6
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 6
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "fence_absent",
+          "anchor": "first_create",
+          "offset": 6,
+          "data": {
+            "provider": "A",
+            "operation_id": "i1:r1:o1"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F06-08",
+    "family": "F06",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 156,
+          "ceiling_minor": 312000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1248000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_before_once",
+          "release_tick": 3
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 3
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F06-09",
+    "family": "F06",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 163,
+          "ceiling_minor": 334150,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1336600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_before_once",
+          "release_tick": 4
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 4
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "fence_absent",
+          "anchor": "first_create",
+          "offset": 4,
+          "data": {
+            "provider": "A",
+            "operation_id": "i1:r1:o1"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F07-00",
+    "family": "F07",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 100,
+          "ceiling_minor": 200000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 3
+        },
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_until",
+          "release_tick": 3
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 3
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F07-01",
+    "family": "F07",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 107,
+          "ceiling_minor": 219350,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 877400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 4
+        },
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_until",
+          "release_tick": 4
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 4
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F07-02",
+    "family": "F07",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 114,
+          "ceiling_minor": 239400,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 957600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 5
+        },
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_until",
+          "release_tick": 5
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 5
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F07-03",
+    "family": "F07",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 121,
+          "ceiling_minor": 260150,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1040600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 6
+        },
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_until",
+          "release_tick": 6
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 6
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F07-04",
+    "family": "F07",
+    "capability": "EXPIRING",
+    "retention_ticks": 2,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 128,
+          "ceiling_minor": 256000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1024000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 3
+        },
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_until",
+          "release_tick": 3
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 3
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F07-05",
+    "family": "F07",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 135,
+          "ceiling_minor": 276750,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1107000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 4
+        },
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_until",
+          "release_tick": 4
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 4
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F07-06",
+    "family": "F07",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 142,
+          "ceiling_minor": 298200,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 1192800,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 5
+        },
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_until",
+          "release_tick": 5
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 5
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F07-07",
+    "family": "F07",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 149,
+          "ceiling_minor": 320350,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1281400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 6
+        },
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_until",
+          "release_tick": 6
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 6
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F07-08",
+    "family": "F07",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 156,
+          "ceiling_minor": 312000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1248000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 3
+        },
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_until",
+          "release_tick": 3
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 3
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F07-09",
+    "family": "F07",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 163,
+          "ceiling_minor": 334150,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1336600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 4
+        },
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_until",
+          "release_tick": 4
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 4
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F08-00",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "retention_ticks": 2,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 100,
+          "ceiling_minor": 200000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 3
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 7
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F08-01",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 107,
+          "ceiling_minor": 219350,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 877400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 4
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 8
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F08-02",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "retention_ticks": 2,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 114,
+          "ceiling_minor": 239400,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 957600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 5
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 9
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F08-03",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 121,
+          "ceiling_minor": 260150,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1040600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 6
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 7
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F08-04",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "retention_ticks": 2,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 128,
+          "ceiling_minor": 256000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1024000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 3
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 8
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F08-05",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 135,
+          "ceiling_minor": 276750,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1107000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 4
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 9
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F08-06",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "retention_ticks": 2,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 142,
+          "ceiling_minor": 298200,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 1192800,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 5
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 7
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F08-07",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 149,
+          "ceiling_minor": 320350,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1281400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 6
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 8
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F08-08",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "retention_ticks": 2,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 156,
+          "ceiling_minor": 312000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1248000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 3
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 9
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F08-09",
+    "family": "F08",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 163,
+          "ceiling_minor": 334150,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1336600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 4
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 7
+        }
+      ],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F09-00",
+    "family": "F09",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 100,
+          "ceiling_minor": 200000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "fence_absent",
+          "anchor": "first_dispatch",
+          "offset": 3,
+          "data": {
+            "provider": "A",
+            "operation_id": "i1:r1:o1"
+          }
+        }
+      ],
+      "crash": "after_dispatch"
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F09-01",
+    "family": "F09",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 107,
+          "ceiling_minor": 219350,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 877400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": "before_receipt"
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F09-02",
+    "family": "F09",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 114,
+          "ceiling_minor": 239400,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 957600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": "after_dispatch"
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F09-03",
+    "family": "F09",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 121,
+          "ceiling_minor": 260150,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1040600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": "before_receipt"
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F09-04",
+    "family": "F09",
+    "capability": "EXPIRING",
+    "retention_ticks": 2,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 128,
+          "ceiling_minor": 256000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1024000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "fence_absent",
+          "anchor": "first_dispatch",
+          "offset": 3,
+          "data": {
+            "provider": "A",
+            "operation_id": "i1:r1:o1"
+          }
+        }
+      ],
+      "crash": "after_dispatch"
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F09-05",
+    "family": "F09",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 135,
+          "ceiling_minor": 276750,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1107000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": "before_receipt"
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F09-06",
+    "family": "F09",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 142,
+          "ceiling_minor": 298200,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 1192800,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "fence_absent",
+          "anchor": "first_dispatch",
+          "offset": 5,
+          "data": {
+            "provider": "A",
+            "operation_id": "i1:r1:o1"
+          }
+        }
+      ],
+      "crash": "after_dispatch"
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F09-07",
+    "family": "F09",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 149,
+          "ceiling_minor": 320350,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1281400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": "before_receipt"
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F09-08",
+    "family": "F09",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 156,
+          "ceiling_minor": 312000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1248000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": "after_dispatch"
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F09-09",
+    "family": "F09",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 163,
+          "ceiling_minor": 334150,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1336600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": "before_receipt"
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F10-00",
+    "family": "F10",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 100,
+          "ceiling_minor": 200000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 3
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 3
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 60,
+            "ceiling_minor": 200000,
+            "provider": "B",
+            "unit_price_minor": 2000
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F10-01",
+    "family": "F10",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 107,
+          "ceiling_minor": 219350,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 877400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 4
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 4
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 64,
+            "ceiling_minor": 219350,
+            "provider": "B",
+            "unit_price_minor": 2050
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F10-02",
+    "family": "F10",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 114,
+          "ceiling_minor": 239400,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 957600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 5
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 5
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 68,
+            "ceiling_minor": 239400,
+            "provider": "B",
+            "unit_price_minor": 2100
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F10-03",
+    "family": "F10",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 121,
+          "ceiling_minor": 260150,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1040600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_before_once",
+          "release_tick": 6
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 6
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 72,
+            "ceiling_minor": 260150,
+            "provider": "B",
+            "unit_price_minor": 2150
+          }
+        },
+        {
+          "kind": "fence_absent",
+          "anchor": "first_create",
+          "offset": 6,
+          "data": {
+            "provider": "A",
+            "operation_id": "i1:r1:o1"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F10-04",
+    "family": "F10",
+    "capability": "EXPIRING",
+    "retention_ticks": 2,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 128,
+          "ceiling_minor": 256000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1024000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_before_once",
+          "release_tick": 3
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 3
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 76,
+            "ceiling_minor": 256000,
+            "provider": "B",
+            "unit_price_minor": 2000
+          }
+        },
+        {
+          "kind": "fence_absent",
+          "anchor": "first_create",
+          "offset": 3,
+          "data": {
+            "provider": "A",
+            "operation_id": "i1:r1:o1"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F10-05",
+    "family": "F10",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 135,
+          "ceiling_minor": 276750,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1107000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_before_once",
+          "release_tick": 4
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 4
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 81,
+            "ceiling_minor": 276750,
+            "provider": "B",
+            "unit_price_minor": 2050
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F10-06",
+    "family": "F10",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 142,
+          "ceiling_minor": 298200,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 1192800,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 5
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 5
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 85,
+            "ceiling_minor": 298200,
+            "provider": "B",
+            "unit_price_minor": 2100
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F10-07",
+    "family": "F10",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 149,
+          "ceiling_minor": 320350,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1281400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 6
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 6
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 89,
+            "ceiling_minor": 320350,
+            "provider": "B",
+            "unit_price_minor": 2150
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F10-08",
+    "family": "F10",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 156,
+          "ceiling_minor": 312000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1248000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_after_once",
+          "release_tick": 3
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 3
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 93,
+            "ceiling_minor": 312000,
+            "provider": "B",
+            "unit_price_minor": 2000
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F10-09",
+    "family": "F10",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 163,
+          "ceiling_minor": 334150,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1336600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "drop_before_once",
+          "release_tick": 4
+        }
+      ],
+      "visibility": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "visible_at": 4
+        }
+      ],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 97,
+            "ceiling_minor": 334150,
+            "provider": "B",
+            "unit_price_minor": 2050
+          }
+        },
+        {
+          "kind": "fence_absent",
+          "anchor": "first_create",
+          "offset": 4,
+          "data": {
+            "provider": "A",
+            "operation_id": "i1:r1:o1"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F11-00",
+    "family": "F11",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 100,
+          "ceiling_minor": 200000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "cancel",
+          "mode": "drop_after_once",
+          "release_tick": 0
+        }
+      ],
+      "visibility": [],
+      "cancel_delays": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "delay": 2
+        }
+      ],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 60,
+            "ceiling_minor": 200000,
+            "provider": "B",
+            "unit_price_minor": 2000
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F11-01",
+    "family": "F11",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 107,
+          "ceiling_minor": 219350,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 877400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "cancel",
+          "mode": "drop_after_once",
+          "release_tick": 0
+        }
+      ],
+      "visibility": [],
+      "cancel_delays": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "delay": 3
+        }
+      ],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 64,
+            "ceiling_minor": 219350,
+            "provider": "B",
+            "unit_price_minor": 2050
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F11-02",
+    "family": "F11",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 114,
+          "ceiling_minor": 239400,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 957600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "cancel",
+          "mode": "drop_after_once",
+          "release_tick": 0
+        }
+      ],
+      "visibility": [],
+      "cancel_delays": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "delay": 4
+        }
+      ],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 68,
+            "ceiling_minor": 239400,
+            "provider": "B",
+            "unit_price_minor": 2100
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F11-03",
+    "family": "F11",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 121,
+          "ceiling_minor": 260150,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1040600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "cancel",
+          "mode": "drop_after_once",
+          "release_tick": 0
+        }
+      ],
+      "visibility": [],
+      "cancel_delays": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "delay": 2
+        }
+      ],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 72,
+            "ceiling_minor": 260150,
+            "provider": "B",
+            "unit_price_minor": 2150
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F11-04",
+    "family": "F11",
+    "capability": "EXPIRING",
+    "retention_ticks": 2,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 128,
+          "ceiling_minor": 256000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1024000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "cancel",
+          "mode": "drop_after_once",
+          "release_tick": 0
+        }
+      ],
+      "visibility": [],
+      "cancel_delays": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "delay": 3
+        }
+      ],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 76,
+            "ceiling_minor": 256000,
+            "provider": "B",
+            "unit_price_minor": 2000
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F11-05",
+    "family": "F11",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 135,
+          "ceiling_minor": 276750,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1107000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "cancel",
+          "mode": "drop_after_once",
+          "release_tick": 0
+        }
+      ],
+      "visibility": [],
+      "cancel_delays": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "delay": 4
+        }
+      ],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 81,
+            "ceiling_minor": 276750,
+            "provider": "B",
+            "unit_price_minor": 2050
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F11-06",
+    "family": "F11",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 142,
+          "ceiling_minor": 298200,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 1192800,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "delay_once",
+          "release_tick": 7
+        }
+      ],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 85,
+            "ceiling_minor": 298200,
+            "provider": "B",
+            "unit_price_minor": 2100
+          }
+        },
+        {
+          "kind": "fence_absent",
+          "anchor": "first_create",
+          "offset": 3,
+          "data": {
+            "provider": "A",
+            "operation_id": "i1:r1:o1"
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F11-07",
+    "family": "F11",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 149,
+          "ceiling_minor": 320350,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1281400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "delay_once",
+          "release_tick": 8
+        }
+      ],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 89,
+            "ceiling_minor": 320350,
+            "provider": "B",
+            "unit_price_minor": 2150
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F11-08",
+    "family": "F11",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 156,
+          "ceiling_minor": 312000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1248000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "delay_once",
+          "release_tick": 7
+        }
+      ],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 93,
+            "ceiling_minor": 312000,
+            "provider": "B",
+            "unit_price_minor": 2000
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F11-09",
+    "family": "F11",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 163,
+          "ceiling_minor": 334150,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1336600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [
+        {
+          "provider": "A",
+          "operation_id": "i1:r1:o1",
+          "verb": "create",
+          "mode": "delay_once",
+          "release_tick": 8
+        }
+      ],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [
+        {
+          "kind": "revision",
+          "anchor": "first_create",
+          "offset": 1,
+          "data": {
+            "intent_id": "i1",
+            "revision_id": 2,
+            "quantity": 97,
+            "ceiling_minor": 334150,
+            "provider": "B",
+            "unit_price_minor": 2050
+          }
+        }
+      ],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": true,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F12-00",
+    "family": "F12",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 100,
+          "ceiling_minor": 200000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 100,
+          "ceiling_minor": 200000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 800000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F12-01",
+    "family": "F12",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 107,
+          "ceiling_minor": 219350,
+          "provider": "A",
+          "unit_price_minor": 2050
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 107,
+          "ceiling_minor": 219350,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 877400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F12-02",
+    "family": "F12",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 114,
+          "ceiling_minor": 239400,
+          "provider": "A",
+          "unit_price_minor": 2100
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 114,
+          "ceiling_minor": 239400,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 957600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F12-03",
+    "family": "F12",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 121,
+          "ceiling_minor": 260150,
+          "provider": "A",
+          "unit_price_minor": 2150
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 121,
+          "ceiling_minor": 260150,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1040600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F12-04",
+    "family": "F12",
+    "capability": "EXPIRING",
+    "retention_ticks": 2,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 128,
+          "ceiling_minor": 256000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 128,
+          "ceiling_minor": 256000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1024000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 2,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F12-05",
+    "family": "F12",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 135,
+          "ceiling_minor": 276750,
+          "provider": "A",
+          "unit_price_minor": 2050
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 135,
+          "ceiling_minor": 276750,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1107000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F12-06",
+    "family": "F12",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 142,
+          "ceiling_minor": 298200,
+          "provider": "A",
+          "unit_price_minor": 2100
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 142,
+          "ceiling_minor": 298200,
+          "provider": "A",
+          "unit_price_minor": 2100
+        }
+      ],
+      "budget_minor": 1192800,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F12-07",
+    "family": "F12",
+    "capability": "EXPIRING",
+    "retention_ticks": 3,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 149,
+          "ceiling_minor": 320350,
+          "provider": "A",
+          "unit_price_minor": 2150
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 149,
+          "ceiling_minor": 320350,
+          "provider": "A",
+          "unit_price_minor": 2150
+        }
+      ],
+      "budget_minor": 1281400,
+      "supplier_contracts": {
+        "A": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "EXPIRING",
+          "retention_ticks": 3,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F12-08",
+    "family": "F12",
+    "capability": "OPAQUE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 156,
+          "ceiling_minor": 312000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 156,
+          "ceiling_minor": 312000,
+          "provider": "A",
+          "unit_price_minor": 2000
+        }
+      ],
+      "budget_minor": 1248000,
+      "supplier_contracts": {
+        "A": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        },
+        "B": {
+          "capability": "OPAQUE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": false
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  },
+  {
+    "case_id": "eval-F12-09",
+    "family": "F12",
+    "capability": "DURABLE",
+    "retention_ticks": null,
+    "horizon": 16,
+    "visible_input": {
+      "requests": [
+        {
+          "intent_id": "i1",
+          "revision_id": 1,
+          "quantity": 163,
+          "ceiling_minor": 334150,
+          "provider": "A",
+          "unit_price_minor": 2050
+        },
+        {
+          "intent_id": "i2",
+          "revision_id": 1,
+          "quantity": 163,
+          "ceiling_minor": 334150,
+          "provider": "A",
+          "unit_price_minor": 2050
+        }
+      ],
+      "budget_minor": 1336600,
+      "supplier_contracts": {
+        "A": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        },
+        "B": {
+          "capability": "DURABLE",
+          "retention_ticks": null,
+          "final_absence_requires_fence": true,
+          "confirmed_cancellation_fences_recreation": true
+        }
+      }
+    },
+    "hidden_schedule": {
+      "faults": [],
+      "visibility": [],
+      "cancel_delays": [],
+      "events": [],
+      "crash": null
+    },
+    "obligations": {
+      "fault_required": false,
+      "budget_contested": false,
+      "success_requires_evidence": true
+    }
+  }
+]

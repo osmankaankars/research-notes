@@ -1,0 +1,12 @@
+{
+  "cases": 26,
+  "episodes": 78,
+  "transport": "http",
+  "input_sha256": "96c2736f19e9c3f9b568e9cd23e45f4b0c62972dddffd45be081c415df4b3da9",
+  "frozen_manifest_sha256": "bf7e45deb2cfacbca41eddcb43c0430c80e6f373bedfc6345635838f4eefd4e2",
+  "model_calls": 0,
+  "human_participants": 0,
+  "additional_api_and_hosting_spend": 0,
+  "execution_note": "Tool time limit interrupted an initial serial run. Completed episodes were independently rescored; missing episodes resumed in isolated directories with unchanged frozen implementation. No outcome-based exclusions. Logical counts are unique case/configuration pairs, not runtime attempts.",
+  "subset_rule": "Evaluation slots 0 and 2 in every family, plus slot 1 in F10 and F11. Chosen after direct evaluation as a transport confirmation, not a held-out generalization study."
+}

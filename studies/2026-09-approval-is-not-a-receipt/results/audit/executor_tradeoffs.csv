@@ -1,0 +1,4 @@
+strategy,cases,completed,invalid_case_count,duplicate_case_count,unsupported_claim_count,mean_calls
+request_only,120,30,70,35,90,1.7916666666666667
+operation_scoped,120,83,15,0,20,4.141666666666667
+intent_scoped,120,97,0,0,0,5.425

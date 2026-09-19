@@ -1,0 +1,7 @@
+{
+  "reason": "Tool command timeout during the first matrix execution, after the pre-evaluation test suite used part of the time budget.",
+  "completed_episode_files": 209,
+  "used_for_reported_scores": false,
+  "recovery": "Full frozen matrix rerun in a new directory; code and scenarios unchanged. No performance-based exclusions.",
+  "archive": "interrupted-direct-run.tar.gz"
+}

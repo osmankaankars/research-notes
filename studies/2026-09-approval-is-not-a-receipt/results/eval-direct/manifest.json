@@ -1,0 +1,12 @@
+{
+  "cases": 120,
+  "episodes": 360,
+  "transport": "direct",
+  "input_sha256": "667528320cbf56748f63cdd1cd7cc7b6ba32cf44bc79fb8d8c7cbb7b3cca207f",
+  "frozen_manifest_sha256": "bf7e45deb2cfacbca41eddcb43c0430c80e6f373bedfc6345635838f4eefd4e2",
+  "python": "3.13.5",
+  "wall_seconds": 27.401793316000067,
+  "model_calls": 0,
+  "human_participants": 0,
+  "additional_api_and_hosting_spend": 0
+}

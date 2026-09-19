@@ -1,0 +1,33 @@
+{
+  "release": "Approval Is Not a Receipt, final publication package",
+  "date": "2026-09-19",
+  "core_tests_rerun": 69,
+  "core_source_and_input_files_unchanged": 19,
+  "archived_primary_episodes_reaudited": 360,
+  "archived_http_episodes_reaudited": 78,
+  "paired_logical_http_matches": 78,
+  "new_model_calls": 0,
+  "source_changes": "Publication text, destination references and packaging only. Frozen experiment source, test definitions, cases and numerical outcomes are unchanged.",
+  "upstream_comparison": "Documented source/contract comparison. No CAV-Bench runtime reproduction or numerical head-to-head claim.",
+  "publication_links": "Companion-study links target the prepared folder. They become live after the GitHub update is uploaded. No new Medium or LinkedIn URL is invented.",
+  "local_targets_resolved": 33,
+  "existing_repository_targets": [],
+  "expected_companion_urls_live_after_upload": [
+    "https://github.com/osmankaankars/research-notes/blob/main/studies/2026-09-approval-is-not-a-receipt/METHODS.md",
+    "https://github.com/osmankaankars/research-notes/blob/main/studies/2026-09-approval-is-not-a-receipt/results/audit/verification.json",
+    "https://github.com/osmankaankars/research-notes/blob/main/studies/2026-09-approval-is-not-a-receipt/results/eval-direct/summary.csv",
+    "https://github.com/osmankaankars/research-notes/tree/main/studies/2026-09-approval-is-not-a-receipt"
+  ],
+  "docx_pdf_pages": 4,
+  "article_inline_figures": 2,
+  "figures_and_cover_visually_checked": true,
+  "tests_executed_from_packaged_study": true,
+  "html_render_checked": {
+    "desktop_width": 1280,
+    "mobile_width": 390,
+    "all_three_images_loaded": true,
+    "horizontal_overflow": false
+  },
+  "final_docx_all_pages_visually_reviewed": true,
+  "packaging_revision": "Replacement package: remove the earlier study from the current main tree with a normal deletion commit. Numerical evidence, fixed protocol and runtime source remain unchanged."
+}
