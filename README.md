@@ -10,17 +10,18 @@ together. Experimental findings are distinguished from interpretation.
 
 | Date | Study | Focus |
 |---|---|---|
+| 27 September 2026 | [Provider-Scoped Isolation for OpenTofu](studies/2026-09-opentofu-provider-isolation/README.md) | Per-configuration execution boundaries, provider supply-chain risk and preserved resource dependencies |
 | September 2026 | [Approval Is Not a Receipt](studies/2026-09-approval-is-not-a-receipt/ARTICLE.md) | Request revisions, uncertain external effects, supplier guarantees and safe recovery |
 
 ## Latest study
 
-[Technical study and reproduction](studies/2026-09-approval-is-not-a-receipt/README.md)
+[Provider-Scoped Isolation for OpenTofu: code and reproduction](studies/2026-09-opentofu-provider-isolation/README.md)
 
-Approval Is Not a Receipt compares three deterministic execution strategies on
-120 fixed synthetic cases. It includes supplier ledgers, a 26-case local HTTP
-confirmation and an independent arithmetic path for checking the results. No
-human participants, language-model inference or production ERP connections
-were involved.
+A working local integration prototype comparing default execution, environment
+filtering, whole-job containerisation and provider-scoped isolation. The scoped
+run removed two tested unrelated accesses while assigned API operations and the
+resource dependency chain continued to work. It is not a production security
+product or a demonstration of live-cloud compatibility.
 
 ## Organisation
 

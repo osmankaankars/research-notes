@@ -1,0 +1,166 @@
+// Copyright (c) 2026 Osman Kaan Kars
+// SPDX-License-Identifier: MPL-2.0
+package command
+
+import (
+	"context"
+	"errors"
+	"fmt"
+	"os"
+	"os/exec"
+	"path/filepath"
+	"sync"
+
+	"github.com/hashicorp/go-hclog"
+	plugin "github.com/hashicorp/go-plugin"
+	"github.com/hashicorp/go-plugin/runner"
+	"github.com/opentofu/opentofu/internal/logging"
+	tfplugin "github.com/opentofu/opentofu/internal/plugin"
+	"github.com/opentofu/opentofu/internal/providercache"
+	providercell "github.com/opentofu/opentofu/internal/providerisolation"
+	"github.com/opentofu/opentofu/internal/providers"
+)
+
+// The embedded Interface satisfies the legacy zero-argument factory signature.
+// This holder is never returned to graph code: the manager unwraps it through
+// BindLaunch, and the old unscoped NewInstance path explicitly rejects it.
+type pendingIsolatedProvider struct {
+	providers.Interface
+	mu     sync.Mutex
+	used   bool
+	launch func(context.Context, providercell.Scope) (providers.Interface, error)
+}
+
+func (p *pendingIsolatedProvider) BindLaunch(ctx context.Context, scope providercell.Scope) (providers.Interface, error) {
+	p.mu.Lock()
+	defer p.mu.Unlock()
+	if p.used {
+		return nil, errors.New("provider isolation: scope already bound")
+	}
+	p.used = true
+	return p.launch(ctx, scope)
+}
+
+func isolatedProviderFactory(meta *providercache.CachedProvider, policy *providercell.Controller) providers.Factory {
+	schemaCache := providers.NewSchemaCache()
+	return func() (providers.Interface, error) {
+		if policy == nil {
+			return nil, errors.New("provider isolation: missing trusted policy")
+		}
+		return &pendingIsolatedProvider{launch: func(ctx context.Context, scope providercell.Scope) (result providers.Interface, resultErr error) {
+			if err := ctx.Err(); err != nil {
+				return nil, err
+			}
+			if scope.Source != meta.Provider.String() {
+				return nil, errors.New("provider isolation: factory source mismatch")
+			}
+			executable, err := meta.ExecutableFile()
+			if err != nil {
+				return nil, err
+			}
+			executable, err = filepath.Abs(executable)
+			if err != nil {
+				return nil, err
+			}
+			spec, err := policy.Resolve(scope, executable)
+			if err != nil {
+				return nil, fmt.Errorf("provider isolation: %w", err)
+			}
+			sockets, err := policy.TransportRoot()
+			if err != nil {
+				return nil, err
+			}
+			// go-plugin 1.7.0 requires exactly one of Cmd/Reattach/RunnerFunc.
+			// RunnerFunc receives only allowlisted bootstrap metadata. No
+			// account secrets or arbitrary parent environment reach the runtime.
+			var ownedRunner *providercell.Runner
+			config := &plugin.ClientConfig{
+				HandshakeConfig:  tfplugin.Handshake,
+				Logger:           logging.NewProviderLogger("isolated"),
+				AllowedProtocols: []plugin.Protocol{plugin.ProtocolGRPC},
+				Managed:          true,
+				AutoMTLS:         true,
+				SkipHostEnv:      true,
+				VersionedPlugins: tfplugin.VersionedPlugins,
+				UnixSocketConfig: &plugin.UnixSocketConfig{TempDir: sockets},
+				SyncStdout:       logging.PluginOutputMonitor(fmt.Sprintf("%s:stdout", meta.Provider)),
+				SyncStderr:       logging.PluginOutputMonitor(fmt.Sprintf("%s:stderr", meta.Provider)),
+				RunnerFunc: func(_ hclog.Logger, bootstrap *exec.Cmd, socketDir string) (runner.Runner, error) {
+					r, err := providercell.NewRunner(spec, bootstrap.Env, socketDir, tfplugin.Handshake.MagicCookieKey)
+					if err != nil {
+						return nil, err
+					}
+					ownedRunner = r
+					return r, nil
+				},
+			}
+			client := plugin.NewClient(config)
+			failed := true
+			defer func() {
+				if failed {
+					client.Kill()
+					if ownedRunner != nil {
+						resultErr = errors.Join(resultErr, ownedRunner.Kill(context.Background()))
+					}
+				}
+			}()
+			handshakeDone := make(chan struct{})
+			defer close(handshakeDone)
+			go func() {
+				select {
+				case <-ctx.Done():
+					client.Kill()
+				case <-handshakeDone:
+				}
+			}()
+			rpcClient, err := client.Client()
+			if err != nil {
+				return nil, err
+			}
+			if err = ctx.Err(); err != nil {
+				return nil, err
+			}
+			raw, err := rpcClient.Dispense(tfplugin.ProviderPluginName)
+			if err != nil {
+				return nil, err
+			}
+			instance, err := initializeProviderInstance(raw, client.NegotiatedVersion(), client, schemaCache)
+			if err != nil {
+				return nil, err
+			}
+			failed = false
+			return &isolatedProvider{Interface: instance, owner: ownedRunner}, nil
+		}}, nil
+	}
+}
+
+// Snapshot once when assembling this command's provider factories, not once per
+// alias and not by reading provider-supplied metadata after it has started.
+func loadProviderIsolationPolicy() (*providercell.Controller, error) {
+	if !providercell.Enabled() {
+		return nil, nil
+	}
+	if os.Getenv("TF_DISABLE_PLUGIN_TLS") != "" {
+		return nil, errors.New("provider isolation requires authenticated RPC; TF_DISABLE_PLUGIN_TLS is unsupported")
+	}
+	policy, err := providercell.Load(os.Getenv("TOFU_PROVIDER_ISOLATION_POLICY"))
+	if err != nil {
+		return nil, fmt.Errorf("provider isolation policy: %w", err)
+	}
+	return policy, nil
+}
+
+// Preserve the provider API and propagate cleanup failure instead of treating
+// successfully written source code as proof of descendant termination.
+type isolatedProvider struct {
+	providers.Interface
+	owner *providercell.Runner
+}
+
+func (p *isolatedProvider) Close(ctx context.Context) error {
+	base := p.Interface.Close(ctx)
+	if p.owner == nil {
+		return errors.Join(base, errors.New("isolation owner missing"))
+	}
+	return errors.Join(base, p.owner.Kill(ctx))
+}

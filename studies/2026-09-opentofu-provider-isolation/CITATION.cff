@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this study when discussing its implementation or recorded results."
+title: "Provider-Scoped Isolation for OpenTofu"
+authors:
+  - family-names: "Kars"
+    given-names: "Osman Kaan"
+version: "2026-09-27"
+date-released: 2026-09-27
+type: software
+repository-code: "https://github.com/osmankaankars/research-notes"
+url: "https://github.com/osmankaankars/research-notes/tree/main/studies/2026-09-opentofu-provider-isolation"
+abstract: "A local OpenTofu integration study of configuration- and lifecycle-scoped provider execution, with four execution arrangements and recorded synthetic access checks."

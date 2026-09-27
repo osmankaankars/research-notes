@@ -1,0 +1,10 @@
+{
+  "recorded_date": "2026-09-27",
+  "original_run_id": 36317604974,
+  "original_lab_commit": "b487dbb261fd3a7c489aee5479e7db1b0b3997ae",
+  "original_artifact_sha256": "636db0429ecadf5058210eee31f595fa16327c46c98821de93efdf9b2beb039f",
+  "public_evidence": "Selected unchanged JSON records and labelled ANSI-stripped CLI excerpts. Not the complete raw archive.",
+  "source_changes": "Runtime source copied from the recorded commit. One obsolete run_lab.py docstring was updated; directory layout and publication documentation changed. Private CI provisioning and development logs omitted.",
+  "new_end_to_end_runs_for_publication": 0,
+  "results_scope": "one local protocol lab; two named synthetic access checks; not cloud compatibility or malware resistance"
+}

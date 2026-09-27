@@ -1,0 +1,80 @@
+=== default ===
+validate | source: lab/command-04.log | sha256: 187ab4c111e41b73410847fb2a3289db5f3b5662ba32af51cfdcc4beff15b0cb
+Success! The configuration is valid.
+apply | source: lab/command-05.log | sha256: 44d8adf56607355cd738bc85f303a7dbf4d04ecdf57fbc0cc73c8cac034fa1a9
+Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
+plan | source: lab/command-07.log | sha256: bc74e9584d573fd4d97dfa624ad0b2bc06242fc6235935ee9296105f9f5aec3e
+No changes. Your infrastructure matches the configuration.
+destroy | source: lab/command-08.log | sha256: 8282c5944c3e43aabe9512a44fd015b86ce9f595693161df5be0e3ac0c7f850d
+Destroy complete! Resources: 3 destroyed.
+=== environment_only ===
+validate | source: lab/command-10.log | sha256: 187ab4c111e41b73410847fb2a3289db5f3b5662ba32af51cfdcc4beff15b0cb
+Success! The configuration is valid.
+apply | source: lab/command-11.log | sha256: adb3a33a612de7815d0350f1fc80f6ef1fba6c3d824c29d29a2a8e4a8bd90288
+Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
+plan | source: lab/command-13.log | sha256: 503fb0a5dcebddccdf52419212b6dc15b4497da52d35a575557bcab0297ccd36
+No changes. Your infrastructure matches the configuration.
+destroy | source: lab/command-14.log | sha256: 4da2eac395aa2fbc4e827e7d2f31fe23f8eea51e124b495f4b60fb1deefe9f4f
+Destroy complete! Resources: 3 destroyed.
+=== whole_job ===
+validate | source: lab/command-16.log | sha256: 187ab4c111e41b73410847fb2a3289db5f3b5662ba32af51cfdcc4beff15b0cb
+Success! The configuration is valid.
+apply | source: lab/command-17.log | sha256: 949e1d61101fe449962a2165c6d71893cf16749b46389f7557ff3bf8528d3883
+Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
+plan | source: lab/command-19.log | sha256: 6b2769f47254ce88ff406162fe319b9c862eabde936a62f6750108e7e1bf9741
+No changes. Your infrastructure matches the configuration.
+destroy | source: lab/command-20.log | sha256: f24128d31c80a4ca7af2bda23c51aad01a035991bd229619484827440c1e8346
+Destroy complete! Resources: 3 destroyed.
+=== instance_scoped ===
+validate | source: lab/command-22.log | sha256: 187ab4c111e41b73410847fb2a3289db5f3b5662ba32af51cfdcc4beff15b0cb
+Success! The configuration is valid.
+apply | source: lab/command-23.log | sha256: e5693bc979c1bd2c855f870138b04fb3c65f3fdd2ce26da7d1d13e58385991ad
+Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
+plan | source: lab/command-25.log | sha256: 5a741169e1ecbec70f0b86ed8e163112d67b3aa9efb9dd2a13f0133a245257fd
+No changes. Your infrastructure matches the configuration.
+destroy | source: lab/command-26.log | sha256: 34c59ae75f6173a8729e28abc32a15538048a09a4bf562d677defd135b9aea4e
+Destroy complete! Resources: 3 destroyed.
+Recorded scoped output:
+dependency_result = {
+      + anchor        = (known after apply)
+      + blue_checks   = (known after apply)
+      + blue_id       = (known after apply)
+      + blue_upstream = (known after apply)
+      + red_checks    = (known after apply)
+      + red_id        = (known after apply)
+      + red_upstream  = (known after apply)
+    }
+random_id.anchor: Creating...
+random_id.anchor: Creation complete after 0s [id=4lAY74QiXTw]
+cell_record.red: Creating...
+cell_record.red: Creation complete after 0s [id=red-7736c4229da32c9b89f8ed44ac638042]
+cell_record.blue: Creating...
+cell_record.blue: Creation complete after 0s [id=blue-cc6f8b54a4dc0e3d847d053533f46e1a]
+
+Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+dependency_result = {
+  "anchor" = "e25018ef84225d3c"
+  "blue_checks" = {
+    "credential_file_present_at_start" = true
+    "own_api_operation_completed" = true
+    "own_credential_readable" = true
+    "self_process_information_available" = true
+    "unassigned_file_readable" = false
+    "unrelated_environment_visible" = false
+  }
+  "blue_id" = "blue-cc6f8b54a4dc0e3d847d053533f46e1a"
+  "blue_upstream" = "red-7736c4229da32c9b89f8ed44ac638042"
+  "red_checks" = {
+    "credential_file_present_at_start" = true
+    "own_api_operation_completed" = true
+    "own_credential_readable" = true
+    "self_process_information_available" = true
+    "unassigned_file_readable" = false
+    "unrelated_environment_visible" = false
+  }
+  "red_id" = "red-7736c4229da32c9b89f8ed44ac638042"
+  "red_upstream" = "e25018ef84225d3c"
+}

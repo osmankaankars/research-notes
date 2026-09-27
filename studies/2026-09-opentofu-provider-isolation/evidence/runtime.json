@@ -1,0 +1,10 @@
+{
+  "euid": 1002,
+  "kind": "runtime_prerequisite_only",
+  "no_effective_capabilities": true,
+  "no_external_interface": true,
+  "no_new_privileges": true,
+  "prerequisite_passed": true,
+  "provider_integration_verified": false,
+  "rootfs_write_denied": true
+}

@@ -1,0 +1,49 @@
+// Copyright (c) 2026 Osman Kaan Kars
+// SPDX-License-Identifier: MPL-2.0
+package plugins
+
+import (
+	"context"
+	"errors"
+	"github.com/opentofu/opentofu/internal/addrs"
+	providercell "github.com/opentofu/opentofu/internal/providerisolation"
+	"github.com/opentofu/opentofu/internal/providers"
+	"testing"
+)
+
+type scopeRecordingProvider struct {
+	providers.Interface
+	got *providercell.Scope
+}
+
+func (p *scopeRecordingProvider) BindLaunch(_ context.Context, s providercell.Scope) (providers.Interface, error) {
+	*p.got = s
+	if s.Phase == "" {
+		return nil, errors.New("unbound")
+	}
+	return &scopeRecordingProvider{}, nil
+}
+func TestProviderIsolationBinding(t *testing.T) {
+	addr := addrs.NewDefaultProvider("random")
+	var got providercell.Scope
+	f := ProviderFactories{addr: func() (providers.Interface, error) { return &scopeRecordingProvider{got: &got}, nil }}
+	if _, err := f.NewInstance(addr); err == nil {
+		t.Fatal("legacy entry bypassed binding")
+	}
+	if _, err := f.newForContext(context.Background(), addr); err == nil {
+		t.Fatal("unscoped launch accepted")
+	}
+	if _, err := f.newForSchema(context.Background(), addr); err != nil {
+		t.Fatal(err)
+	}
+	if got.Source != addr.String() || got.Phase != providercell.Schema || got.Configuration != "" {
+		t.Fatal(got)
+	}
+	want := providercell.Scope{Source: addr.String(), Configuration: "full-resolved-alias", InstanceKey: "[\"east\"]", Phase: providercell.Configured}
+	if _, err := f.newForContext(providercell.WithScope(context.Background(), want), addr); err != nil {
+		t.Fatal(err)
+	}
+	if got != want {
+		t.Fatal("scope changed", got, want)
+	}
+}

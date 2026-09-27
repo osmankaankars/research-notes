@@ -1,0 +1,51 @@
+// Copyright (c) 2026 Osman Kaan Kars
+// SPDX-License-Identifier: MPL-2.0
+package plugins
+
+import (
+	"context"
+	"fmt"
+
+	"github.com/opentofu/opentofu/internal/addrs"
+	providercell "github.com/opentofu/opentofu/internal/providerisolation"
+	"github.com/opentofu/opentofu/internal/providers"
+)
+
+// Constructing this holder does not start any provider code. The fully resolved
+// authority scope must be bound before any RPC method can be reached.
+type scopedProviderBinder interface {
+	BindLaunch(context.Context, providercell.Scope) (providers.Interface, error)
+}
+
+func (p ProviderFactories) newForSchema(ctx context.Context, addr addrs.Provider) (providers.Interface, error) {
+	return p.newForScope(ctx, addr, providercell.Scope{Source: addr.String(), Phase: providercell.Schema})
+}
+
+func (p ProviderFactories) newForContext(ctx context.Context, addr addrs.Provider) (providers.Interface, error) {
+	scope, ok := providercell.FromContext(ctx)
+	// An ordinary factory does not consume scope. A protected factory rejects
+	// an absent/unknown scope; it never silently becomes a schema process.
+	if !ok {
+		scope = providercell.Scope{}
+	}
+	if scope.Source != "" && scope.Source != addr.String() {
+		return nil, fmt.Errorf("provider isolation: source identity mismatch")
+	}
+	scope.Source = addr.String()
+	return p.newForScope(ctx, addr, scope)
+}
+
+func (p ProviderFactories) newForScope(ctx context.Context, addr addrs.Provider, scope providercell.Scope) (providers.Interface, error) {
+	f, ok := p[addr]
+	if !ok {
+		return nil, fmt.Errorf("unavailable provider %q", addr)
+	}
+	instance, err := f()
+	if err != nil {
+		return nil, err
+	}
+	if isolated, ok := instance.(scopedProviderBinder); ok {
+		return isolated.BindLaunch(ctx, scope)
+	}
+	return instance, nil
+}

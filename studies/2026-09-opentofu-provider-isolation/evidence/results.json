@@ -1,0 +1,118 @@
+{
+  "status": "COMPLETED_LOCAL_PROTOCOL_LAB",
+  "cloud_compatibility_tested": false,
+  "build_manifest": {
+    "status": "COMPILED_NOT_RUNTIME_VERIFIED",
+    "opentofu_commit": "b4305e5a5dd2fb79a27897ae30784a181d3a26cb",
+    "random_commit": "bc2ddb552b4676d16997987a9bf2875c7b98d342",
+    "fixture_sdk": "v2.38.1",
+    "go": "go version go1.26.6 linux/amd64",
+    "input_mode": "online",
+    "inputs_manifest_sha256": null,
+    "binaries": {
+      "tofu-original": "762be4cfb4f9a838685f9dbb21582f28b5bfaeb329e6bec050378c0abf78c1f9",
+      "tofu-scoped": "009a25c76071fde0e9e5e831a70bfe8a6c9f48b03ba81f1cf168e4ff3ad7069d",
+      "cellctl": "5ef294a6ea8981a075aa90ff99c1be8e9bf86854598aa19f2302e9e3338cadf1",
+      "tofu-env-only": "081ccea54bf89b2d31deba7b9c2f02158baf1acd53fda4de1a542c790365bb31",
+      "terraform-provider-cell_v0.1.0": "d8acafbcd542c4d897173736b1b189cb9d9635966e808e776701e1fcc21b0374",
+      "fixture-api": "f3a67e737f2ba9c23ad999ce44fa3c8506fa252defa7bcd61a2aa8b8f4aa1950",
+      "terraform-provider-random_v3.7.2": "4c8de3ae0c303c684dc34c2d01177af5b3369f7b1afdb671c3f5eb1db5f09ed2"
+    },
+    "isolation_verified": false,
+    "fixture_go_sum_sha256": "efa3102939351ca6b5803fe8c35f87ce510c914df5b54b31800d5d0dee782b57"
+  },
+  "results": {
+    "default": {
+      "anchor": "a490eafb9163d31e",
+      "blue_checks": {
+        "credential_file_present_at_start": false,
+        "own_api_operation_completed": true,
+        "own_credential_readable": true,
+        "self_process_information_available": true,
+        "unassigned_file_readable": true,
+        "unrelated_environment_visible": true
+      },
+      "blue_id": "blue-34c5d1c070946801c4adaa1bed42cb99",
+      "blue_upstream": "red-0de03c322fc61fff767cb6ba9a5975e7",
+      "red_checks": {
+        "credential_file_present_at_start": false,
+        "own_api_operation_completed": true,
+        "own_credential_readable": true,
+        "self_process_information_available": true,
+        "unassigned_file_readable": true,
+        "unrelated_environment_visible": true
+      },
+      "red_id": "red-0de03c322fc61fff767cb6ba9a5975e7",
+      "red_upstream": "a490eafb9163d31e"
+    },
+    "environment_only": {
+      "anchor": "d077bf86632154df",
+      "blue_checks": {
+        "credential_file_present_at_start": false,
+        "own_api_operation_completed": true,
+        "own_credential_readable": true,
+        "self_process_information_available": true,
+        "unassigned_file_readable": true,
+        "unrelated_environment_visible": false
+      },
+      "blue_id": "blue-b29541db1f768269b142f50f989beeb3",
+      "blue_upstream": "red-f676a951d691fce6d2cee67c26df7817",
+      "red_checks": {
+        "credential_file_present_at_start": false,
+        "own_api_operation_completed": true,
+        "own_credential_readable": true,
+        "self_process_information_available": true,
+        "unassigned_file_readable": true,
+        "unrelated_environment_visible": false
+      },
+      "red_id": "red-f676a951d691fce6d2cee67c26df7817",
+      "red_upstream": "d077bf86632154df"
+    },
+    "whole_job": {
+      "anchor": "0a25b73c6dfb6e54",
+      "blue_checks": {
+        "credential_file_present_at_start": false,
+        "own_api_operation_completed": true,
+        "own_credential_readable": true,
+        "self_process_information_available": true,
+        "unassigned_file_readable": true,
+        "unrelated_environment_visible": true
+      },
+      "blue_id": "blue-34ba517bc0b08f778f5f35e1523017f5",
+      "blue_upstream": "red-2fda6aaea0907502c60d980438209289",
+      "red_checks": {
+        "credential_file_present_at_start": false,
+        "own_api_operation_completed": true,
+        "own_credential_readable": true,
+        "self_process_information_available": true,
+        "unassigned_file_readable": true,
+        "unrelated_environment_visible": true
+      },
+      "red_id": "red-2fda6aaea0907502c60d980438209289",
+      "red_upstream": "0a25b73c6dfb6e54"
+    },
+    "instance_scoped": {
+      "anchor": "e25018ef84225d3c",
+      "blue_checks": {
+        "credential_file_present_at_start": true,
+        "own_api_operation_completed": true,
+        "own_credential_readable": true,
+        "self_process_information_available": true,
+        "unassigned_file_readable": false,
+        "unrelated_environment_visible": false
+      },
+      "blue_id": "blue-cc6f8b54a4dc0e3d847d053533f46e1a",
+      "blue_upstream": "red-7736c4229da32c9b89f8ed44ac638042",
+      "red_checks": {
+        "credential_file_present_at_start": true,
+        "own_api_operation_completed": true,
+        "own_credential_readable": true,
+        "self_process_information_available": true,
+        "unassigned_file_readable": false,
+        "unrelated_environment_visible": false
+      },
+      "red_id": "red-7736c4229da32c9b89f8ed44ac638042",
+      "red_upstream": "e25018ef84225d3c"
+    }
+  }
+}
