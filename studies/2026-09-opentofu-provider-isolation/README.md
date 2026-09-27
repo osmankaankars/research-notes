@@ -1,26 +1,28 @@
-# Provider-Scoped Isolation for OpenTofu
+# Provider Isolation for OpenTofu
 
 **Osman Kaan Kars | 27 September 2026**
 
-A configuration- and lifecycle-aware provider launcher that keeps one OpenTofu
-resource graph while assigning each external provider process its own execution
-boundary. **Working local integration prototype, not a production security product.**
+This OpenTofu integration runs each external provider process in a separate
+execution environment. Access is assigned according to its configuration and
+execution phase, while the resource dependency graph stays intact.
+
+**Working local integration prototype, not a production security product.**
 
 ## Result
 
-In the recorded four-arrangement lab, the scoped integration prevented both
-research-provider configurations from obtaining a named unrelated environment
-value and an unassigned file's expected content. Their assigned API operations
+In a local comparison of four execution arrangements, neither isolated provider
+configuration obtained the unrelated environment value or the expected contents
+of the unassigned file. Their assigned API operations
 and resource dependencies continued to work.
 
 | Execution arrangement | Unrelated environment visible | Unassigned file content obtained | Assigned operations and dependency chain |
 |---|---|---|---|
 | Default OpenTofu | Yes | Yes | Completed |
 | Environment filtering only | No | Yes | Completed |
-| Whole-job container | Yes | Yes | Completed |
-| Provider-scoped isolation | No | No | Completed |
+| Whole job in one container | Yes | Yes | Completed |
+| Isolation by provider configuration | No | No | Completed |
 
-Each arrangement completed `init`, `validate`, `apply`, a no-change `plan`, and
+Each arrangement completed `init`, `validate`, `apply`, a `plan` with no changes, and
 `destroy`. This is one completed lab, not a statistical success rate.
 
 **Read:** [Article](ARTICLE.md) · [Results and limits](RESULTS.md) ·
@@ -29,23 +31,22 @@ Each arrangement completed `init`, `validate`, `apply`, a no-change `plan`, and
 ## Inspect the implementation
 
 `code/cell/` contains policy binding, executable staging, the rootless Podman
-runner and private socket handling. `code/integration/` installs a blob-checked
-source overlay at the pinned OpenTofu revision. `code/fixture/` and
+runner and private socket handling. `code/integration/` checks upstream file hashes and
+applies a source overlay to the pinned OpenTofu revision. `code/fixture/` and
 `code/fixtureapi/` contain the controlled provider and its local service.
 `code/tools/` builds the three core variants and runs the comparison.
 
-The policy is selected by trusted core code before external-provider execution.
-Schema discovery is separated from credential-bearing validation and configured
-instances. Unsupported launches fail closed. The existing provider RPC and
+The policy is selected by trusted core code before an external provider starts.
+Schema discovery runs separately from validation and configured instances, which
+may receive credentials. Unsupported launches fail closed. The existing provider RPC and
 automatic mutual TLS are retained.
 
 ## Reproduce
 
-Use a disposable **Linux x86-64** machine with a working non-root Podman/cgroups-v2
-session, Git, Python 3.10+ and Go **1.26.6**. The recorded run used Podman 4.9.3.
+Use a disposable **Linux x86-64** machine with a working rootless Podman session using cgroups v2, Git, Python 3.10+ and Go **1.26.6**. The recorded run used Podman 4.9.3.
 These are reproduction targets, not recommendations to deploy old versions in
 production. Source and module downloads require Internet access; the lab APIs
-are local. Do not run the default or whole-job comparison in an environment
+are local. Do not run the default comparison or the comparison with the whole job in one container in an environment
 containing real credentials. No cloud account is needed.
 
 From this study directory:
@@ -61,10 +62,10 @@ python3 tools/run_lab.py --build "$PWD/.build/reproduction" \
 
 The build and output directories must not already exist. A successful lab writes
 `.build/results/summary.json` with `COMPLETED_LOCAL_PROTOCOL_LAB`. The earlier
-build manifest intentionally remains a build-stage record. Read the generated
+build manifest intentionally remains a record of the build stage. Read the generated
 logs if a step fails; do not remove checks to obtain a green result.
 
-For source-only component checks, without running the lab:
+To check the source components without running the lab:
 
 ```sh
 go test -race -count=1 ./...

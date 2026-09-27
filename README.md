@@ -9,7 +9,7 @@ SAP and enterprise systems.
 
 | Published | Study | Focus |
 |---|---|---|
-| 27 September 2026 | [Provider-Scoped Isolation for OpenTofu](studies/2026-09-opentofu-provider-isolation/README.md) | Provider-configuration isolation while preserving resource dependencies |
+| 27 September 2026 | [Provider Isolation for OpenTofu](studies/2026-09-opentofu-provider-isolation/README.md) | Isolating provider configurations while preserving resource dependencies |
 | 19 September 2026 | [Approval Is Not a Receipt](studies/2026-09-approval-is-not-a-receipt/README.md) | Request revisions, uncertain external effects and safe recovery |
 
 ## Reading and reproduction

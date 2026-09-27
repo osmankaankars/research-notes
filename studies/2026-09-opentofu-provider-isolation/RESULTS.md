@@ -11,7 +11,7 @@ archive had SHA-256:
 ```
 
 The environment was Linux x86-64, Go 1.26.6, rootless Podman 4.9.3 and cgroups v2.
-The controlled resources used artificial credentials and local Unix-socket APIs.
+The controlled resources used artificial credentials and local APIs reached through Unix sockets.
 No real cloud keys or malware packages were used.
 
 ## Observed comparison
@@ -20,13 +20,13 @@ No real cloud keys or malware packages were used.
 |---|---|---|---|---|
 | Default | Yes | Yes | Yes | Yes |
 | Environment filtering only | No | Yes | Yes | Yes |
-| Whole-job container | Yes | Yes | Yes | Yes |
-| Provider-scoped isolation | No | No | Yes | Yes |
+| Whole job in one container | Yes | Yes | Yes | Yes |
+| Isolation by provider configuration | No | No | Yes | Yes |
 
 Both `red` and `blue` configurations recorded the listed result in every
-arrangement. They executed the same research-provider binary with distinct
+arrangement. They executed the same research provider binary with distinct
 credential and service bindings. Each arrangement validated, created three
-resources, produced a no-change plan, and destroyed three resources.
+resources, produced a plan with no changes, and destroyed three resources.
 
 The scoped dependency outputs were:
 
@@ -41,8 +41,8 @@ blue_id          = blue-cc6f8b54a4dc0e3d847d053533f46e1a
 ## Evidence available here
 
 [evidence/results.json](evidence/results.json) is the unchanged aggregate lab
-result, including the original build-stage manifest and per-configuration
-booleans. [evidence/cli-excerpts.txt](evidence/cli-excerpts.txt) selects validation,
+result, including the original build manifest and boolean checks for each
+configuration. [evidence/cli-excerpts.txt](evidence/cli-excerpts.txt) selects validation,
 apply, plan and destroy messages from the original logs and includes the scoped
 output. ANSI formatting was removed from the excerpts. Source filenames and
 original file hashes are listed alongside them.
@@ -60,7 +60,7 @@ is not a claim to contain that entire archive.
   obtained. The measurement does not export an errno; it does not establish a
   particular `EACCES` or `EPERM` response.
 - `self_process_information_available` checks `/proc/self/stat`, not the privacy
-  of the parent process or every cross-process access path.
+  of the parent process or every access path between processes.
 - `credential_file_present_at_start` in a resource result is sampled by a check
   function called during configuration. It is not independent evidence that a
   schema process had no credentials at its first instruction.
@@ -68,8 +68,9 @@ is not a claim to contain that entire archive.
   produced before the successful lab. The outer summary, not a rewritten build
   record, reports the later runtime result.
 - One fixed workflow is not a performance benchmark, repeated statistical study,
-  all-provider compatibility result or comprehensive malicious-code evaluation.
+  compatibility result covering all providers, or comprehensive evaluation of malicious code.
 
-The implementation narrows the tested ambient-access boundary without stopping
-useful work. It does not establish resistance to kernel/runtime escape, all
-credential-theft routes, or misuse of deliberately granted provider authority.
+The implementation removed the two unrelated accesses being measured while the
+assigned operations continued to work. This does not establish resistance to
+kernel or runtime escapes, every method of stealing credentials, or
+misuse of authority deliberately granted to a provider.
