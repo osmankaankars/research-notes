@@ -1,6 +1,6 @@
 # Provider-Scoped Isolation for OpenTofu
 
-**Osman Kaan Kars**
+**Osman Kaan Kars | 27 September 2026**
 
 A configuration- and lifecycle-aware provider launcher that keeps one OpenTofu
 resource graph while assigning each external provider process its own execution
